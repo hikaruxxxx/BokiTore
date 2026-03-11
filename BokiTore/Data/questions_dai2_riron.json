@@ -1,0 +1,3345 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "dai2_riron_001",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "帳簿は主要簿と補助簿に大別されます。主要簿は仕訳帳と総勘定元帳の2つで構成され、企業のすべての取引を記録します。補助簿は主要簿を補助する帳簿です。",
+      "tags": [
+        "帳簿組織",
+        "主要簿",
+        "補助簿"
+      ],
+      "termDefinitions": [
+        {
+          "term": "主要簿",
+          "category": "帳簿",
+          "definition": "仕訳帳と総勘定元帳からなる基本帳簿",
+          "realWorldExample": "会社の全取引を記す「メインノート」"
+        },
+        {
+          "term": "補助簿",
+          "category": "帳簿",
+          "definition": "主要簿を補助する帳簿の総称",
+          "realWorldExample": "現金や売掛金など特定項目の詳細帳面"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "帳簿は[blank_1]と[blank_2]に大別される。[blank_1]は仕訳帳と総勘定元帳から構成され、すべての取引を記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "主要簿"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "補助簿"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_002",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "主要簿は仕訳帳と総勘定元帳の2つです。仕訳帳は取引を日付順に記録し、総勘定元帳は勘定科目ごとに分類して記録します。",
+      "tags": [
+        "仕訳帳",
+        "総勘定元帳",
+        "主要簿"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕訳帳",
+          "category": "帳簿",
+          "definition": "すべての取引を日付順に仕訳形式で記録する帳簿",
+          "realWorldExample": "日記帳のように毎日の取引を時系列で書き留めるノート"
+        },
+        {
+          "term": "総勘定元帳",
+          "category": "帳簿",
+          "definition": "勘定科目ごとに取引を分類・集計する帳簿",
+          "realWorldExample": "科目別にファイリングされた書類棚のようなもの"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "主要簿は[blank_1]と[blank_2]から構成される。[blank_1]にはすべての取引が日付順に記録され、[blank_2]には勘定科目ごとに分類して記録される。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "仕訳帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "総勘定元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_003",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "補助簿は補助記入帳と補助元帳に分かれます。補助記入帳は特定の取引を詳しく記録し、補助元帳は特定の勘定の内訳を記録します。",
+      "tags": [
+        "補助記入帳",
+        "補助元帳",
+        "補助簿"
+      ],
+      "termDefinitions": [
+        {
+          "term": "補助記入帳",
+          "category": "帳簿",
+          "definition": "特定種類の取引を詳細に記録する補助簿",
+          "realWorldExample": "現金の出入りだけを詳しく書く専用ノート"
+        },
+        {
+          "term": "補助元帳",
+          "category": "帳簿",
+          "definition": "特定の勘定科目の内訳を記録する補助簿",
+          "realWorldExample": "取引先ごとの売掛金残高を管理する台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "補助簿は[blank_1]と[blank_2]に分けられる。[blank_1]には現金出納帳や仕入帳などがあり、[blank_2]には売掛金元帳や買掛金元帳などがある。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "補助記入帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "補助元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_004",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "仕訳帳の記録を総勘定元帳に書き写す作業を転記といいます。転記により勘定科目ごとの集計ができるようになります。",
+      "tags": [
+        "転記",
+        "仕訳帳",
+        "総勘定元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "転記",
+          "category": "簿記手続",
+          "definition": "仕訳帳の記録を総勘定元帳に書き写す作業",
+          "realWorldExample": "日記の内容を科目別ファイルに整理し直す作業"
+        },
+        {
+          "term": "仕訳",
+          "category": "簿記手続",
+          "definition": "取引を借方と貸方に分けて記録すること",
+          "realWorldExample": "お金の動きを左右に分けて書き留めること"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]に記録された取引は、[blank_2]の手続きによって[blank_3]に記入される。この作業により勘定科目ごとの集計が可能になる。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "仕訳帳",
+              "総勘定元帳",
+              "転記",
+              "仕訳",
+              "決算",
+              "元丁"
+            ],
+            "correctAnswer": "仕訳帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "仕訳帳",
+              "総勘定元帳",
+              "転記",
+              "仕訳",
+              "決算",
+              "元丁"
+            ],
+            "correctAnswer": "転記"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "仕訳帳",
+              "総勘定元帳",
+              "転記",
+              "仕訳",
+              "決算",
+              "元丁"
+            ],
+            "correctAnswer": "総勘定元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_005",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "現金出納帳は現金の入出金を記録する補助記入帳、仕入帳は商品の仕入取引を記録する補助記入帳です。",
+      "tags": [
+        "現金出納帳",
+        "仕入帳",
+        "補助記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "現金出納帳",
+          "category": "補助簿",
+          "definition": "現金の収入・支出の明細を記録する帳簿",
+          "realWorldExample": "財布の中身の増減を毎日記録する家計簿"
+        },
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引の明細を記録する帳簿",
+          "realWorldExample": "お店が問屋から商品を買った記録をまとめたノート"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "補助記入帳の例として、[blank_1]や[blank_2]がある。[blank_1]は現金の収入・支出を記録し、[blank_2]は商品の仕入取引を記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "現金出納帳",
+              "仕入帳",
+              "売上帳",
+              "受取手形記入帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ],
+            "correctAnswer": "現金出納帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "現金出納帳",
+              "仕入帳",
+              "売上帳",
+              "受取手形記入帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ],
+            "correctAnswer": "仕入帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_006",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "売掛金元帳は得意先別の売掛金残高を管理する補助元帳、商品有高帳は商品の在庫状況を記録する補助元帳です。",
+      "tags": [
+        "売掛金元帳",
+        "商品有高帳",
+        "補助元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売掛金元帳",
+          "category": "補助簿",
+          "definition": "得意先ごとの売掛金の増減・残高を記録する帳簿",
+          "realWorldExample": "お客さんごとの「ツケ」の残高を管理する台帳"
+        },
+        {
+          "term": "商品有高帳",
+          "category": "補助簿",
+          "definition": "商品の受入・払出・残高を記録する帳簿",
+          "realWorldExample": "倉庫の在庫数を毎日チェックする在庫管理表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "補助元帳の例として、[blank_1]や[blank_2]がある。[blank_1]は得意先ごとの売掛金残高を管理し、[blank_2]は商品の受払と残高を記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "現金出納帳",
+              "仕入帳",
+              "売上帳",
+              "受取手形記入帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ],
+            "correctAnswer": "売掛金元帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "現金出納帳",
+              "仕入帳",
+              "売上帳",
+              "受取手形記入帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ],
+            "correctAnswer": "商品有高帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_007",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "主要簿（仕訳帳と総勘定元帳）はすべての企業に必須の帳簿です。補助簿は企業の必要に応じて設けます。",
+      "tags": [
+        "主要簿",
+        "仕訳帳",
+        "総勘定元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "主要簿",
+          "category": "帳簿",
+          "definition": "すべての企業が備える基本帳簿",
+          "realWorldExample": "どんなお店でも必ずつける「基本の帳面」"
+        },
+        {
+          "term": "総勘定元帳",
+          "category": "帳簿",
+          "definition": "勘定科目ごとに取引を分類・集計する帳簿",
+          "realWorldExample": "科目別の整理棚"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "すべての企業が必ず備えなければならない帳簿は[blank_1]である。[blank_1]に含まれる[blank_2]は取引の発生順に記録し、[blank_3]は勘定科目別に記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "現金出納帳",
+              "転記"
+            ],
+            "correctAnswer": "主要簿"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "現金出納帳",
+              "転記"
+            ],
+            "correctAnswer": "仕訳帳"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "主要簿",
+              "補助簿",
+              "仕訳帳",
+              "総勘定元帳",
+              "現金出納帳",
+              "転記"
+            ],
+            "correctAnswer": "総勘定元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_008",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "簿記の基本的な流れは、取引発生→仕訳帳に記入→総勘定元帳に転記です。期末には総勘定元帳から試算表を作成します。",
+      "tags": [
+        "仕訳帳",
+        "総勘定元帳",
+        "転記"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕訳帳",
+          "category": "帳簿",
+          "definition": "取引を日付順に仕訳形式で記録する帳簿",
+          "realWorldExample": "日々の出来事を時間順に書く日記帳"
+        },
+        {
+          "term": "試算表",
+          "category": "帳簿",
+          "definition": "総勘定元帳の記録を集計して転記の正確性を検証する一覧表",
+          "realWorldExample": "全科目の合計を一覧にした成績表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "簿記の記帳手続きは、取引の発生→[blank_1]への記入→[blank_2]への転記の順に行われる。期末には[blank_2]の記録をもとに試算表を作成する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳",
+              "試算表",
+              "精算表"
+            ],
+            "correctAnswer": "仕訳帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "仕訳帳",
+              "総勘定元帳",
+              "補助記入帳",
+              "補助元帳",
+              "試算表",
+              "精算表"
+            ],
+            "correctAnswer": "総勘定元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_009",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "受取手形記入帳と支払手形記入帳は手形の増減を記録する帳簿で、いずれも補助記入帳に分類されます。",
+      "tags": [
+        "受取手形記入帳",
+        "支払手形記入帳",
+        "補助記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形の増減を記録する帳簿",
+          "realWorldExample": "もらった約束手形の管理台帳"
+        },
+        {
+          "term": "支払手形記入帳",
+          "category": "補助簿",
+          "definition": "支払手形の増減を記録する帳簿",
+          "realWorldExample": "振り出した約束手形の管理台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "手形に関する補助簿として、[blank_1]と[blank_2]がある。これらは[blank_3]に分類される。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "受取手形記入帳",
+              "支払手形記入帳",
+              "売掛金元帳",
+              "買掛金元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "受取手形記入帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "受取手形記入帳",
+              "支払手形記入帳",
+              "売掛金元帳",
+              "買掛金元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "支払手形記入帳"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "受取手形記入帳",
+              "支払手形記入帳",
+              "売掛金元帳",
+              "買掛金元帳",
+              "補助記入帳",
+              "補助元帳"
+            ],
+            "correctAnswer": "補助記入帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_010",
+      "category": "理論穴埋め",
+      "subcategory": "帳簿組織",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "買掛金元帳は仕入先別の買掛金残高を管理する帳簿で、補助元帳に分類されます。",
+      "tags": [
+        "買掛金元帳",
+        "補助元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "買掛金元帳",
+          "category": "補助簿",
+          "definition": "仕入先ごとの買掛金の増減・残高を記録する帳簿",
+          "realWorldExample": "各問屋への未払い額を管理する台帳"
+        },
+        {
+          "term": "補助元帳",
+          "category": "帳簿",
+          "definition": "勘定科目の内訳を管理する帳簿",
+          "realWorldExample": "取引先別の詳細記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は仕入先ごとの買掛金残高を記録する帳簿であり、[blank_2]に分類される。[blank_2]は特定の勘定科目の内訳を管理する帳簿である。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "買掛金元帳",
+              "売掛金元帳",
+              "補助元帳",
+              "補助記入帳",
+              "仕入帳",
+              "総勘定元帳"
+            ],
+            "correctAnswer": "買掛金元帳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "買掛金元帳",
+              "売掛金元帳",
+              "補助元帳",
+              "補助記入帳",
+              "仕入帳",
+              "総勘定元帳"
+            ],
+            "correctAnswer": "補助元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_011",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "試算表には合計試算表・残高試算表・合計残高試算表の3種類があります。すべて総勘定元帳の記録をもとに作成します。",
+      "tags": [
+        "合計試算表",
+        "残高試算表",
+        "合計残高試算表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "合計試算表",
+          "category": "試算表",
+          "definition": "各勘定の借方合計と貸方合計を一覧にした試算表",
+          "realWorldExample": "各科目の合計額を左右に並べたチェックリスト"
+        },
+        {
+          "term": "残高試算表",
+          "category": "試算表",
+          "definition": "各勘定の残高のみを一覧にした試算表",
+          "realWorldExample": "各科目の差額（残高）だけを集めた一覧表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "試算表には[blank_1]、[blank_2]、[blank_3]の3種類がある。いずれも総勘定元帳の記録から作成される。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "合計試算表",
+              "残高試算表",
+              "合計残高試算表",
+              "精算表",
+              "貸借対照表",
+              "損益計算書"
+            ],
+            "correctAnswer": "合計試算表"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "合計試算表",
+              "残高試算表",
+              "合計残高試算表",
+              "精算表",
+              "貸借対照表",
+              "損益計算書"
+            ],
+            "correctAnswer": "残高試算表"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "合計試算表",
+              "残高試算表",
+              "合計残高試算表",
+              "精算表",
+              "貸借対照表",
+              "損益計算書"
+            ],
+            "correctAnswer": "合計残高試算表"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_012",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "試算表の目的は転記の正確性を検証することです。貸借平均の原理により、正しく転記されていれば借方合計と貸方合計は一致します。",
+      "tags": [
+        "試算表",
+        "転記",
+        "貸借平均の原理"
+      ],
+      "termDefinitions": [
+        {
+          "term": "貸借平均の原理",
+          "category": "簿記原理",
+          "definition": "すべての取引で借方合計と貸方合計が等しくなる原理",
+          "realWorldExample": "天秤のように左右が常に釣り合う仕組み"
+        },
+        {
+          "term": "転記",
+          "category": "簿記手続",
+          "definition": "仕訳帳の内容を総勘定元帳に移す作業",
+          "realWorldExample": "日記の内容を科目別に整理し直す作業"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "試算表を作成する主な目的は、[blank_1]を検証することである。これは[blank_2]に基づいており、借方合計と貸方合計が一致するはずである。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "転記の正確性",
+              "仕訳の正確性",
+              "決算の正確性",
+              "貸借平均の原理",
+              "損益計算",
+              "棚卸"
+            ],
+            "correctAnswer": "転記の正確性"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "転記の正確性",
+              "仕訳の正確性",
+              "決算の正確性",
+              "貸借平均の原理",
+              "損益計算",
+              "棚卸"
+            ],
+            "correctAnswer": "貸借平均の原理"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_013",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "合計試算表は各勘定の借方・貸方の合計額を記載し、残高試算表は残高のみを記載します。両者の違いを理解しましょう。",
+      "tags": [
+        "合計試算表",
+        "残高試算表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "合計試算表",
+          "category": "試算表",
+          "definition": "各勘定の借方合計と貸方合計を記載する試算表",
+          "realWorldExample": "各科目の左右の合計を並べた表"
+        },
+        {
+          "term": "残高試算表",
+          "category": "試算表",
+          "definition": "各勘定の残高のみを記載する試算表",
+          "realWorldExample": "各科目の差引残高を集めた表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は各勘定の借方合計と貸方合計をそれぞれ記載する。[blank_2]は各勘定の残高（借方残高または貸方残高）のみを記載する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "合計試算表",
+              "残高試算表",
+              "合計残高試算表",
+              "転記",
+              "仕訳",
+              "決算"
+            ],
+            "correctAnswer": "合計試算表"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "合計試算表",
+              "残高試算表",
+              "合計残高試算表",
+              "転記",
+              "仕訳",
+              "決算"
+            ],
+            "correctAnswer": "残高試算表"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_014",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "試算表の貸借一致では、貸借反対の誤りや二重転記など、借方・貸方が同額で間違っている場合は発見できません。",
+      "tags": [
+        "試算表",
+        "検証機能",
+        "誤りの発見"
+      ],
+      "termDefinitions": [
+        {
+          "term": "試算表",
+          "category": "決算",
+          "definition": "転記の正確性を検証するために作成する一覧表",
+          "realWorldExample": "帳簿の計算ミスを見つけるためのチェックシート"
+        },
+        {
+          "term": "二重転記",
+          "category": "簿記手続",
+          "definition": "同じ取引を2回転記してしまう誤り",
+          "realWorldExample": "同じレシートを2回記録してしまうミス"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "試算表の貸借が一致しても、[blank_1]や[blank_2]などの誤りは発見できない。試算表で発見できるのは借方と貸方の金額が異なる誤りだけである。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "転記の誤り",
+              "仕訳の誤り",
+              "貸借反対の誤り",
+              "記入漏れ",
+              "二重転記",
+              "相殺の誤り"
+            ],
+            "correctAnswer": "貸借反対の誤り"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "転記の誤り",
+              "仕訳の誤り",
+              "貸借反対の誤り",
+              "記入漏れ",
+              "二重転記",
+              "相殺の誤り"
+            ],
+            "correctAnswer": "二重転記"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_015",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "合計残高試算表は、合計試算表と残高試算表の情報を1つにまとめたもので、各勘定の合計と残高の両方がわかります。",
+      "tags": [
+        "合計残高試算表",
+        "合計試算表",
+        "残高試算表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "合計残高試算表",
+          "category": "試算表",
+          "definition": "各勘定の合計額と残高の両方を記載する試算表",
+          "realWorldExample": "合計と残高の両方がわかる万能チェックリスト"
+        },
+        {
+          "term": "精算表",
+          "category": "決算",
+          "definition": "決算整理を行いながら財務諸表を作成するための一覧表",
+          "realWorldExample": "決算の下書き用ワークシート"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は、[blank_2]と[blank_3]の両方の情報を1つにまとめた試算表である。各勘定の合計額と残高の両方が記載される。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "合計残高試算表",
+              "合計試算表",
+              "残高試算表",
+              "精算表",
+              "総勘定元帳",
+              "試算表"
+            ],
+            "correctAnswer": "合計残高試算表"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "合計残高試算表",
+              "合計試算表",
+              "残高試算表",
+              "精算表",
+              "総勘定元帳",
+              "試算表"
+            ],
+            "correctAnswer": "合計試算表"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "合計残高試算表",
+              "合計試算表",
+              "残高試算表",
+              "精算表",
+              "総勘定元帳",
+              "試算表"
+            ],
+            "correctAnswer": "残高試算表"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_016",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "試算表は通常期末に作成しますが、月次でも作成できます。いずれも総勘定元帳の記録を集計して作成します。",
+      "tags": [
+        "試算表",
+        "期末",
+        "月次"
+      ],
+      "termDefinitions": [
+        {
+          "term": "試算表",
+          "category": "決算",
+          "definition": "転記の正確性を検証する一覧表",
+          "realWorldExample": "帳簿の正しさを確かめるチェック表"
+        },
+        {
+          "term": "総勘定元帳",
+          "category": "帳簿",
+          "definition": "勘定科目ごとに取引を分類記録する帳簿",
+          "realWorldExample": "科目別の分類ファイル"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "試算表は通常[blank_1]に作成されるが、[blank_2]ごとに作成する場合もある。いずれも[blank_3]の各勘定の記録を集計して作成する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "月次",
+              "期末",
+              "総勘定元帳",
+              "仕訳帳",
+              "転記",
+              "決算整理"
+            ],
+            "correctAnswer": "期末"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "月次",
+              "期末",
+              "総勘定元帳",
+              "仕訳帳",
+              "転記",
+              "決算整理"
+            ],
+            "correctAnswer": "月次"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "月次",
+              "期末",
+              "総勘定元帳",
+              "仕訳帳",
+              "転記",
+              "決算整理"
+            ],
+            "correctAnswer": "総勘定元帳"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_017",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "すべての仕訳は借方と貸方に同額を記録するため、転記が正しければ試算表の貸借合計は必ず一致します。これが貸借平均の原理です。",
+      "tags": [
+        "貸借平均の原理",
+        "仕訳",
+        "転記"
+      ],
+      "termDefinitions": [
+        {
+          "term": "貸借平均の原理",
+          "category": "簿記原理",
+          "definition": "借方合計と貸方合計が常に等しくなる原理",
+          "realWorldExample": "シーソーのように左右が常にバランスする仕組み"
+        },
+        {
+          "term": "仕訳",
+          "category": "簿記手続",
+          "definition": "取引を借方と貸方に分解して記録する手続き",
+          "realWorldExample": "お金の動きを左（もらう側）と右（出す側）に分けて記録すること"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "試算表の借方合計と貸方合計が一致するのは、[blank_1]にもとづいている。すべての[blank_2]は借方と貸方に同額を記録するため、[blank_3]後も合計は一致する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "貸借平均の原理",
+              "費用収益対応の原則",
+              "転記",
+              "仕訳",
+              "合計試算表",
+              "残高試算表"
+            ],
+            "correctAnswer": "貸借平均の原理"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "貸借平均の原理",
+              "費用収益対応の原則",
+              "転記",
+              "仕訳",
+              "合計試算表",
+              "残高試算表"
+            ],
+            "correctAnswer": "仕訳"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "貸借平均の原理",
+              "費用収益対応の原則",
+              "転記",
+              "仕訳",
+              "合計試算表",
+              "残高試算表"
+            ],
+            "correctAnswer": "転記"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_018",
+      "category": "理論穴埋め",
+      "subcategory": "試算表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "合計試算表では、各勘定科目の借方合計と貸方合計を記載します。全勘定の借方合計合計と貸方合計合計が一致すれば、転記は正確です。",
+      "tags": [
+        "合計試算表",
+        "転記"
+      ],
+      "termDefinitions": [
+        {
+          "term": "合計試算表",
+          "category": "試算表",
+          "definition": "各勘定の借方・貸方それぞれの合計額を記載する試算表",
+          "realWorldExample": "すべての科目の左右の合計を並べて一致を確認する表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は各勘定科目の借方合計・貸方合計を記載する試算表であり、貸借それぞれの合計額が一致することで転記の正確性を確認できる。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "合計試算表",
+              "残高試算表",
+              "貸借対照表",
+              "損益計算書",
+              "精算表",
+              "帳簿"
+            ],
+            "correctAnswer": "合計試算表"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_019",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "貸借対照表は決算日時点の財政状態（資産・負債・純資産）を示し、損益計算書は会計期間の経営成績（収益・費用・利益）を示します。",
+      "tags": [
+        "貸借対照表",
+        "損益計算書",
+        "財務諸表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "貸借対照表",
+          "category": "財務諸表",
+          "definition": "一定時点の財政状態を示す報告書",
+          "realWorldExample": "ある日の会社の持ち物と借金の一覧表"
+        },
+        {
+          "term": "損益計算書",
+          "category": "財務諸表",
+          "definition": "一定期間の経営成績を示す報告書",
+          "realWorldExample": "1年間でいくら儲かったかを示す成績表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は一定時点における企業の財政状態を示し、[blank_2]は一定期間における経営成績を示す。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "貸借対照表",
+              "損益計算書",
+              "資産",
+              "負債",
+              "純資産",
+              "当期純利益"
+            ],
+            "correctAnswer": "貸借対照表"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "貸借対照表",
+              "損益計算書",
+              "資産",
+              "負債",
+              "純資産",
+              "当期純利益"
+            ],
+            "correctAnswer": "損益計算書"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_020",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "貸借対照表は資産=負債+純資産の等式で成り立ちます。左側（借方）に資産、右側（貸方）に負債と純資産を記載します。",
+      "tags": [
+        "貸借対照表",
+        "資産",
+        "負債",
+        "純資産"
+      ],
+      "termDefinitions": [
+        {
+          "term": "資産",
+          "category": "貸借対照表",
+          "definition": "企業が保有する経済的価値のあるもの",
+          "realWorldExample": "現金、土地、建物など会社の財産"
+        },
+        {
+          "term": "負債",
+          "category": "貸借対照表",
+          "definition": "将来返済しなければならない義務",
+          "realWorldExample": "銀行からの借入金や買掛金など、いずれ払うお金"
+        },
+        {
+          "term": "純資産",
+          "category": "貸借対照表",
+          "definition": "資産から負債を引いた残り（自己資本）",
+          "realWorldExample": "会社の「本当の持ち分」で、株主のもの"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "貸借対照表は[blank_1]、[blank_2]、[blank_3]の3つの要素で構成される。[blank_1]＝[blank_2]＋[blank_3]の等式が成り立つ。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "資産",
+              "負債",
+              "純資産",
+              "収益",
+              "費用",
+              "利益"
+            ],
+            "correctAnswer": "資産"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "資産",
+              "負債",
+              "純資産",
+              "収益",
+              "費用",
+              "利益"
+            ],
+            "correctAnswer": "負債"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "資産",
+              "負債",
+              "純資産",
+              "収益",
+              "費用",
+              "利益"
+            ],
+            "correctAnswer": "純資産"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_021",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "損益計算書は収益-費用=当期純利益（または当期純損失）を示します。収益が費用を上回れば利益です。",
+      "tags": [
+        "損益計算書",
+        "収益",
+        "費用",
+        "当期純利益"
+      ],
+      "termDefinitions": [
+        {
+          "term": "収益",
+          "category": "損益計算書",
+          "definition": "企業活動によって得られた経済的利益",
+          "realWorldExample": "商品を売って得た売上や利息など、入ってくるお金"
+        },
+        {
+          "term": "費用",
+          "category": "損益計算書",
+          "definition": "収益を獲得するために消費された経済的価値",
+          "realWorldExample": "仕入代金や給料など、出ていくお金"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "損益計算書は[blank_1]から[blank_2]を差し引いて[blank_3]を算出する。[blank_1]が[blank_2]より大きければ利益、小さければ損失となる。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "収益",
+              "費用",
+              "当期純利益",
+              "資産",
+              "負債",
+              "売上原価"
+            ],
+            "correctAnswer": "収益"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "収益",
+              "費用",
+              "当期純利益",
+              "資産",
+              "負債",
+              "売上原価"
+            ],
+            "correctAnswer": "費用"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "収益",
+              "費用",
+              "当期純利益",
+              "資産",
+              "負債",
+              "売上原価"
+            ],
+            "correctAnswer": "当期純利益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_022",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "簿記の5要素は資産・負債・純資産・収益・費用です。貸借対照表には資産・負債・純資産が、損益計算書には収益・費用が表示されます。",
+      "tags": [
+        "5要素",
+        "資産",
+        "負債",
+        "純資産",
+        "収益",
+        "費用"
+      ],
+      "termDefinitions": [
+        {
+          "term": "純資産",
+          "category": "貸借対照表",
+          "definition": "資産から負債を差し引いた残額",
+          "realWorldExample": "会社の正味の財産で、株主に帰属するもの"
+        },
+        {
+          "term": "収益",
+          "category": "損益計算書",
+          "definition": "企業活動から生じる経済的利益の増加",
+          "realWorldExample": "売上や受取利息など、儲けにつながる入金"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "簿記の5要素とは、[blank_1]・[blank_2]・[blank_3]・[blank_4]・費用である。このうち貸借対照表に表示されるのは[blank_1]・[blank_2]・[blank_3]の3つである。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "資産",
+              "費用",
+              "負債",
+              "収益",
+              "純資産",
+              "損益"
+            ],
+            "correctAnswer": "資産"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "資産",
+              "費用",
+              "負債",
+              "収益",
+              "純資産",
+              "損益"
+            ],
+            "correctAnswer": "負債"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "資産",
+              "費用",
+              "負債",
+              "収益",
+              "純資産",
+              "損益"
+            ],
+            "correctAnswer": "純資産"
+          },
+          {
+            "id": "blank_4",
+            "options": [
+              "資産",
+              "費用",
+              "負債",
+              "収益",
+              "純資産",
+              "損益"
+            ],
+            "correctAnswer": "収益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_023",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "勘定式は借方（資産）と貸方（負債・純資産）を左右に並べる形式、報告式は上から順に記載する形式です。",
+      "tags": [
+        "勘定式",
+        "報告式",
+        "貸借対照表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "勘定式",
+          "category": "表示形式",
+          "definition": "借方と貸方を左右に並べて表示する形式",
+          "realWorldExample": "T字型に左右で表す、勘定科目のような形式"
+        },
+        {
+          "term": "報告式",
+          "category": "表示形式",
+          "definition": "上から下へ順番に記載する形式",
+          "realWorldExample": "レポートのように上から読み進める形式"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "貸借対照表の表示形式には[blank_1]と[blank_2]がある。[blank_1]は左右に分けて表示し、[blank_2]は上から順に表示する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "勘定式",
+              "報告式",
+              "貸借対照表",
+              "損益計算書",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "勘定式"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "勘定式",
+              "報告式",
+              "貸借対照表",
+              "損益計算書",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "報告式"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_024",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "決算は会計期間の経営成績と財政状態を明らかにする手続きで、その最終成果物が財務諸表（貸借対照表と損益計算書）です。",
+      "tags": [
+        "決算",
+        "財務諸表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "決算",
+          "category": "簿記手続",
+          "definition": "会計期間の経営成績と財政状態を確定させる手続き",
+          "realWorldExample": "1年分の家計簿を締めて年間収支を計算すること"
+        },
+        {
+          "term": "財務諸表",
+          "category": "報告書",
+          "definition": "企業の財政状態と経営成績を報告する書類",
+          "realWorldExample": "会社の成績表と財産目録のセット"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]とは、一定期間の経営成績と財政状態を明らかにするための手続きである。[blank_1]の最終成果物が[blank_2]である。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "決算",
+              "開始",
+              "月次",
+              "財務諸表",
+              "試算表",
+              "帳簿"
+            ],
+            "correctAnswer": "決算"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "決算",
+              "開始",
+              "月次",
+              "財務諸表",
+              "試算表",
+              "帳簿"
+            ],
+            "correctAnswer": "財務諸表"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_025",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "当期純利益は繰越利益剰余金に加算され、貸借対照表の純資産の部に反映されます。これが2つの財務諸表のつながりです。",
+      "tags": [
+        "当期純利益",
+        "繰越利益剰余金",
+        "財務諸表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "当期純利益",
+          "category": "損益計算書",
+          "definition": "収益から費用を差し引いた当期の最終的な利益",
+          "realWorldExample": "1年間で最終的にいくら儲かったかの金額"
+        },
+        {
+          "term": "繰越利益剰余金",
+          "category": "貸借対照表",
+          "definition": "過去からの累積利益のうち未処分のもの",
+          "realWorldExample": "会社の貯金箱に貯まっている利益の合計"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "損益計算書で算出された[blank_1]は、貸借対照表の[blank_2]に加算される。これにより損益計算書と貸借対照表はつながっている。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "当期純利益",
+              "売上総利益",
+              "営業利益",
+              "繰越利益剰余金",
+              "資本金",
+              "純資産"
+            ],
+            "correctAnswer": "当期純利益"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "当期純利益",
+              "売上総利益",
+              "営業利益",
+              "繰越利益剰余金",
+              "資本金",
+              "純資産"
+            ],
+            "correctAnswer": "繰越利益剰余金"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_026",
+      "category": "理論穴埋め",
+      "subcategory": "財務諸表",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "費用が収益を上回ると当期純損失が発生します。逆に収益が費用を上回れば当期純利益となります。",
+      "tags": [
+        "当期純損失",
+        "費用",
+        "収益"
+      ],
+      "termDefinitions": [
+        {
+          "term": "当期純損失",
+          "category": "損益計算書",
+          "definition": "費用が収益を上回った場合に生じる損失",
+          "realWorldExample": "1年間の支出が収入を超えてしまった赤字の金額"
+        },
+        {
+          "term": "費用",
+          "category": "損益計算書",
+          "definition": "収益を獲得するために消費した経済的価値",
+          "realWorldExample": "商品の仕入代金や従業員の給料など"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "損益計算書において[blank_1]が[blank_2]を上回った場合、その差額を[blank_3]という。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "当期純損失",
+              "当期純利益",
+              "収益",
+              "費用",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "費用"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "当期純損失",
+              "当期純利益",
+              "収益",
+              "費用",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "収益"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "当期純損失",
+              "当期純利益",
+              "収益",
+              "費用",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "当期純損失"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_027",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "減価償却は固定資産の取得原価を耐用年数にわたって費用配分する手続きです。使用による価値の減少を反映します。",
+      "tags": [
+        "減価償却",
+        "取得原価",
+        "耐用年数"
+      ],
+      "termDefinitions": [
+        {
+          "term": "取得原価",
+          "category": "固定資産",
+          "definition": "固定資産を取得するために支払った金額（付随費用含む）",
+          "realWorldExample": "商品を買った値段に送料や設置費を足した合計金額"
+        },
+        {
+          "term": "耐用年数",
+          "category": "固定資産",
+          "definition": "固定資産が使用できる見積期間",
+          "realWorldExample": "パソコンなら5年、建物なら30年など、使える年数の目安"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "減価償却とは、固定資産の[blank_1]を[blank_2]にわたって費用として配分する手続きである。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "定額法",
+              "直接法",
+              "間接法",
+              "耐用年数",
+              "残存価額",
+              "取得原価"
+            ],
+            "correctAnswer": "取得原価"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "定額法",
+              "直接法",
+              "間接法",
+              "耐用年数",
+              "残存価額",
+              "取得原価"
+            ],
+            "correctAnswer": "耐用年数"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_028",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "簿記3級では定額法のみを学習します。定額法は毎期同じ金額を減価償却費として計上する最もシンプルな方法です。",
+      "tags": [
+        "定額法",
+        "減価償却"
+      ],
+      "termDefinitions": [
+        {
+          "term": "定額法",
+          "category": "減価償却",
+          "definition": "毎期均等額を償却する方法",
+          "realWorldExample": "10万円のパソコンを5年使うなら毎年2万円ずつ費用にする方法"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "簿記3級で学習する減価償却の計算方法は[blank_1]である。[blank_1]では毎期同額の減価償却費を計上する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "定額法",
+              "直接法",
+              "間接法",
+              "耐用年数",
+              "残存価額",
+              "取得原価"
+            ],
+            "correctAnswer": "定額法"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_029",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "直接法は固定資産勘定を直接減額し、間接法は減価償却累計額勘定を用いて間接的に記録します。簿記3級では間接法が主流です。",
+      "tags": [
+        "直接法",
+        "間接法",
+        "減価償却累計額"
+      ],
+      "termDefinitions": [
+        {
+          "term": "直接法",
+          "category": "記帳方法",
+          "definition": "固定資産の帳簿価額を直接減額する方法",
+          "realWorldExample": "ノートの値段をそのまま減らして書き直す方法"
+        },
+        {
+          "term": "間接法",
+          "category": "記帳方法",
+          "definition": "減価償却累計額勘定で間接的に記録する方法",
+          "realWorldExample": "別のメモに「いくら価値が減ったか」を記録しておく方法"
+        },
+        {
+          "term": "減価償却累計額",
+          "category": "固定資産",
+          "definition": "これまでの減価償却費の合計額",
+          "realWorldExample": "購入からどれだけ価値が減ったかの累計"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "減価償却の記帳方法には[blank_1]と[blank_2]がある。[blank_1]は固定資産の帳簿価額を直接減らし、[blank_2]は[blank_3]勘定を用いて間接的に減少を記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "直接法",
+              "間接法",
+              "減価償却累計額",
+              "減価償却費",
+              "備品",
+              "取得原価"
+            ],
+            "correctAnswer": "直接法"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "直接法",
+              "間接法",
+              "減価償却累計額",
+              "減価償却費",
+              "備品",
+              "取得原価"
+            ],
+            "correctAnswer": "間接法"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "直接法",
+              "間接法",
+              "減価償却累計額",
+              "減価償却費",
+              "備品",
+              "取得原価"
+            ],
+            "correctAnswer": "減価償却累計額"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_030",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "定額法の計算式は（取得原価-残存価額）÷耐用年数です。最近の簿記3級では残存価額をゼロとする出題がほとんどです。",
+      "tags": [
+        "定額法",
+        "取得原価",
+        "残存価額",
+        "耐用年数"
+      ],
+      "termDefinitions": [
+        {
+          "term": "残存価額",
+          "category": "固定資産",
+          "definition": "耐用年数経過後に見込まれる売却価額",
+          "realWorldExample": "使い終わった後の下取り価格のようなもの"
+        },
+        {
+          "term": "減価償却費",
+          "category": "費用",
+          "definition": "当期に計上する減価償却の金額",
+          "realWorldExample": "今年分の固定資産の値下がり額"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "定額法による減価償却費の計算式は、（[blank_1]－[blank_2]）÷[blank_3]である。簿記3級では[blank_2]はゼロとする場合が多い。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "取得原価",
+              "残存価額",
+              "耐用年数",
+              "減価償却費",
+              "帳簿価額",
+              "定額法"
+            ],
+            "correctAnswer": "取得原価"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "取得原価",
+              "残存価額",
+              "耐用年数",
+              "減価償却費",
+              "帳簿価額",
+              "定額法"
+            ],
+            "correctAnswer": "残存価額"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "取得原価",
+              "残存価額",
+              "耐用年数",
+              "減価償却費",
+              "帳簿価額",
+              "定額法"
+            ],
+            "correctAnswer": "耐用年数"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_031",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "取得原価は購入代価+付随費用（引取運賃、設置費、仲介手数料等）で計算します。付随費用を含めることを忘れないようにしましょう。",
+      "tags": [
+        "取得原価",
+        "付随費用"
+      ],
+      "termDefinitions": [
+        {
+          "term": "取得原価",
+          "category": "固定資産",
+          "definition": "固定資産の購入代価と付随費用の合計",
+          "realWorldExample": "パソコン本体の値段に送料と設置費を足した金額"
+        },
+        {
+          "term": "付随費用",
+          "category": "固定資産",
+          "definition": "固定資産の取得に直接要した費用",
+          "realWorldExample": "購入時の送料、設置費、登記費用など"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "固定資産の[blank_1]は、購入代価に[blank_2]を加えた金額である。[blank_2]には引取運賃や設置費用などが含まれる。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "取得原価",
+              "付随費用",
+              "帳簿価額",
+              "時価",
+              "残存価額",
+              "減価償却累計額"
+            ],
+            "correctAnswer": "取得原価"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "取得原価",
+              "付随費用",
+              "帳簿価額",
+              "時価",
+              "残存価額",
+              "減価償却累計額"
+            ],
+            "correctAnswer": "付随費用"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_032",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "帳簿価額=取得原価-減価償却累計額です。売却価額が帳簿価額を上回れば売却益、下回れば売却損になります。",
+      "tags": [
+        "帳簿価額",
+        "取得原価",
+        "減価償却累計額"
+      ],
+      "termDefinitions": [
+        {
+          "term": "帳簿価額",
+          "category": "固定資産",
+          "definition": "取得原価から減価償却累計額を差し引いた現在の簿価",
+          "realWorldExample": "買った値段から使った分を引いた「今の価値」"
+        },
+        {
+          "term": "減価償却累計額",
+          "category": "固定資産",
+          "definition": "過去の減価償却費の累計額",
+          "realWorldExample": "これまでに費用として計上した減価償却の合計"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "固定資産の[blank_1]は、[blank_2]から[blank_3]を差し引いた金額である。売却時にはこの[blank_1]と売却価額を比較して売却損益を計算する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "帳簿価額",
+              "取得原価",
+              "減価償却累計額",
+              "残存価額",
+              "時価",
+              "減価償却費"
+            ],
+            "correctAnswer": "帳簿価額"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "帳簿価額",
+              "取得原価",
+              "減価償却累計額",
+              "残存価額",
+              "時価",
+              "減価償却費"
+            ],
+            "correctAnswer": "取得原価"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "帳簿価額",
+              "取得原価",
+              "減価償却累計額",
+              "残存価額",
+              "時価",
+              "減価償却費"
+            ],
+            "correctAnswer": "減価償却累計額"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_033",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "期中取得の場合、年間減価償却費×使用月数÷12で月割計算します。取得月から期末月までの月数を数えます。",
+      "tags": [
+        "月割計算",
+        "減価償却"
+      ],
+      "termDefinitions": [
+        {
+          "term": "月割計算",
+          "category": "減価償却",
+          "definition": "年額を月数按分して計算する方法",
+          "realWorldExample": "年間費用を使った月数分だけ日割りのように計算する方法"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "期中に取得した固定資産の減価償却費は[blank_1]で計算する。年間の減価償却費に使用月数を掛けて12で割る。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "月割計算",
+              "年割計算",
+              "日割計算",
+              "定額法",
+              "取得原価",
+              "耐用年数"
+            ],
+            "correctAnswer": "月割計算"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_034",
+      "category": "理論穴埋め",
+      "subcategory": "減価償却",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "減価償却の本質的な目的は費用配分です。固定資産の取得原価を使用期間にわたって費用として配分することで、各期の利益を正しく計算できます。",
+      "tags": [
+        "費用配分",
+        "減価償却"
+      ],
+      "termDefinitions": [
+        {
+          "term": "費用配分",
+          "category": "会計概念",
+          "definition": "取得原価を各期に割り当てる手続き",
+          "realWorldExample": "10万円のパソコンを5年で使うなら毎年2万円ずつ費用にすること"
+        },
+        {
+          "term": "減価償却費",
+          "category": "費用",
+          "definition": "当期に配分された固定資産の費用",
+          "realWorldExample": "今年分として計上される固定資産の値下がり額"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "減価償却の目的は、固定資産の取得原価を各会計期間に[blank_1]することである。これにより適正な期間損益計算が可能になる。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "費用配分",
+              "資産評価",
+              "利益計算",
+              "取得原価",
+              "減価償却費",
+              "耐用年数"
+            ],
+            "correctAnswer": "費用配分"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_035",
+      "category": "理論穴埋め",
+      "subcategory": "商品売買",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "3分法は仕入・売上・繰越商品の3つの勘定を使って商品売買を記録する方法です。簿記3級では3分法が中心です。",
+      "tags": [
+        "3分法",
+        "仕入",
+        "売上"
+      ],
+      "termDefinitions": [
+        {
+          "term": "3分法",
+          "category": "商品売買",
+          "definition": "仕入・売上・繰越商品の3勘定で記録する方法",
+          "realWorldExample": "商品の「買い」「売り」「在庫」を別々に記録する方法"
+        },
+        {
+          "term": "仕入",
+          "category": "費用",
+          "definition": "商品を購入したときに使う勘定科目",
+          "realWorldExample": "お店が問屋から商品を買ったときの費用"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "商品売買の記帳方法の1つである[blank_1]では、仕入時に[blank_2]勘定、売上時に[blank_3]勘定を用いて記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "3分法",
+              "分記法",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価"
+            ],
+            "correctAnswer": "3分法"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "3分法",
+              "分記法",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価"
+            ],
+            "correctAnswer": "仕入"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "3分法",
+              "分記法",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価"
+            ],
+            "correctAnswer": "売上"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_036",
+      "category": "理論穴埋め",
+      "subcategory": "商品売買",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "売上原価=期首繰越商品+当期仕入-期末繰越商品で計算します。「売れた商品の仕入値段の合計」を意味します。",
+      "tags": [
+        "売上原価",
+        "繰越商品",
+        "仕入"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売上原価",
+          "category": "費用",
+          "definition": "当期に販売した商品の仕入原価",
+          "realWorldExample": "売れた商品だけの仕入値段の合計"
+        },
+        {
+          "term": "繰越商品",
+          "category": "資産",
+          "definition": "期末に売れ残った商品の原価",
+          "realWorldExample": "倉庫に残っている商品の仕入値段"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は次の算式で計算される。期首[blank_2]＋当期[blank_3]－期末[blank_2]＝[blank_1]",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "3分法",
+              "分記法",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価"
+            ],
+            "correctAnswer": "売上原価"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "3分法",
+              "分記法",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価"
+            ],
+            "correctAnswer": "繰越商品"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "3分法",
+              "分記法",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価"
+            ],
+            "correctAnswer": "仕入"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_037",
+      "category": "理論穴埋め",
+      "subcategory": "商品売買",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "決算整理仕訳「しーくりくりしー」と覚えます。仕入/繰越商品（期首分）→繰越商品/仕入（期末分）の順で仕訳します。",
+      "tags": [
+        "決算整理",
+        "仕入",
+        "繰越商品"
+      ],
+      "termDefinitions": [
+        {
+          "term": "繰越商品",
+          "category": "資産",
+          "definition": "期末在庫の商品原価",
+          "realWorldExample": "売れ残った商品の仕入値段"
+        },
+        {
+          "term": "仕入",
+          "category": "費用",
+          "definition": "商品の購入時に使う勘定",
+          "realWorldExample": "商品を買ったときの費用を記録する科目"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "3分法の決算整理仕訳では、まず[blank_1]／[blank_2]（期首商品の振替）、次に[blank_2]／[blank_1]（期末商品の振替）を行う。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "仕入",
+              "繰越商品",
+              "売上原価",
+              "損益",
+              "売上",
+              "商品"
+            ],
+            "correctAnswer": "仕入"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "仕入",
+              "繰越商品",
+              "売上原価",
+              "損益",
+              "売上",
+              "商品"
+            ],
+            "correctAnswer": "繰越商品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_038",
+      "category": "理論穴埋め",
+      "subcategory": "商品売買",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "分記法は売上時に商品（原価分の減少）と商品売買益（利益分）に分けて記録します。3分法とは異なり、売上のたびに利益がわかります。",
+      "tags": [
+        "分記法",
+        "商品",
+        "商品売買益"
+      ],
+      "termDefinitions": [
+        {
+          "term": "分記法",
+          "category": "商品売買",
+          "definition": "商品勘定と商品売買益勘定で記録する方法",
+          "realWorldExample": "売るたびに「原価」と「儲け」を分けて記録する方法"
+        },
+        {
+          "term": "商品売買益",
+          "category": "収益",
+          "definition": "商品の販売による利益",
+          "realWorldExample": "商品の売値と仕入値の差額、つまり儲けの部分"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は売上時に[blank_2]勘定と[blank_3]勘定を用いて記録する方法である。商品の原価と利益を売上の都度分けて記録する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "3分法",
+              "分記法",
+              "商品",
+              "商品売買益",
+              "仕入",
+              "売上"
+            ],
+            "correctAnswer": "分記法"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "3分法",
+              "分記法",
+              "商品",
+              "商品売買益",
+              "仕入",
+              "売上"
+            ],
+            "correctAnswer": "商品"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "3分法",
+              "分記法",
+              "商品",
+              "商品売買益",
+              "仕入",
+              "売上"
+            ],
+            "correctAnswer": "商品売買益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_039",
+      "category": "理論穴埋め",
+      "subcategory": "商品売買",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "決算振替仕訳で仕入（費用）と売上（収益）は損益勘定に振り替えます。損益勘定で当期純利益を算出します。",
+      "tags": [
+        "決算振替",
+        "損益勘定",
+        "仕入",
+        "売上"
+      ],
+      "termDefinitions": [
+        {
+          "term": "損益",
+          "category": "決算",
+          "definition": "収益と費用を集約して当期純利益を算出する勘定",
+          "realWorldExample": "1年の売上と経費を合計して利益を計算する集計科目"
+        },
+        {
+          "term": "仕入",
+          "category": "費用",
+          "definition": "商品の購入代金を記録する勘定",
+          "realWorldExample": "商品を買ったときの代金"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "決算において、[blank_1]勘定の残高と[blank_2]勘定の残高は[blank_3]勘定に振り替えられる。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "損益",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価",
+              "当期純利益"
+            ],
+            "correctAnswer": "仕入"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "損益",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価",
+              "当期純利益"
+            ],
+            "correctAnswer": "売上"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "損益",
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価",
+              "当期純利益"
+            ],
+            "correctAnswer": "損益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_040",
+      "category": "理論穴埋め",
+      "subcategory": "商品売買",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "3分法は仕入（費用）・売上（収益）・繰越商品（資産）の3つの勘定で商品売買を処理します。",
+      "tags": [
+        "3分法",
+        "仕入",
+        "繰越商品"
+      ],
+      "termDefinitions": [
+        {
+          "term": "3分法",
+          "category": "商品売買",
+          "definition": "仕入・売上・繰越商品で記録する方法",
+          "realWorldExample": "「買った」「売った」「残った」の3つを別々に管理する方法"
+        },
+        {
+          "term": "繰越商品",
+          "category": "資産",
+          "definition": "期末に残った商品の原価",
+          "realWorldExample": "まだ売れていない商品の仕入値段"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]では、仕入時に[blank_2]勘定の借方に記入し、売上時に売上勘定の貸方に記入する。期末には[blank_3]勘定で在庫を処理する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価",
+              "3分法",
+              "商品"
+            ],
+            "correctAnswer": "3分法"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価",
+              "3分法",
+              "商品"
+            ],
+            "correctAnswer": "仕入"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "仕入",
+              "売上",
+              "繰越商品",
+              "売上原価",
+              "3分法",
+              "商品"
+            ],
+            "correctAnswer": "繰越商品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_041",
+      "category": "理論穴埋め",
+      "subcategory": "経過勘定",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "前払費用は「先に払ったけどまだ使っていない分」、未払費用は「もう使ったけどまだ払っていない分」です。",
+      "tags": [
+        "前払費用",
+        "未払費用",
+        "経過勘定"
+      ],
+      "termDefinitions": [
+        {
+          "term": "前払費用",
+          "category": "資産",
+          "definition": "翌期以降に属する費用を前払いしたもの",
+          "realWorldExample": "来月分の家賃を今月払った場合のまだ使っていない分"
+        },
+        {
+          "term": "未払費用",
+          "category": "負債",
+          "definition": "当期に属する費用でまだ支払っていないもの",
+          "realWorldExample": "今月使った電気代がまだ請求されていない分"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "当期に支払ったが次期以降の費用となるものを[blank_1]という。逆に、当期の費用だが未払いのものを[blank_2]という。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "見越",
+              "繰延"
+            ],
+            "correctAnswer": "前払費用"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "見越",
+              "繰延"
+            ],
+            "correctAnswer": "未払費用"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_042",
+      "category": "理論穴埋め",
+      "subcategory": "経過勘定",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "繰延は「先払い分を次期に繰り延べる」処理、見越は「未払い分を当期に見越して計上する」処理です。",
+      "tags": [
+        "繰延",
+        "見越",
+        "経過勘定"
+      ],
+      "termDefinitions": [
+        {
+          "term": "繰延",
+          "category": "決算整理",
+          "definition": "支払済みだが次期の費用を資産として繰り延べる処理",
+          "realWorldExample": "年払い保険料のうちまだ来ていない月分を前払いとして残す処理"
+        },
+        {
+          "term": "見越",
+          "category": "決算整理",
+          "definition": "未払いだが当期の費用を計上する処理",
+          "realWorldExample": "まだ届いていないが当月分の利息を費用として計上する処理"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "決算時に次期分の費用を前払計上する処理を[blank_1]といい、当期分の費用を未払計上する処理を[blank_2]という。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "見越",
+              "繰延"
+            ],
+            "correctAnswer": "繰延"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "見越",
+              "繰延"
+            ],
+            "correctAnswer": "見越"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_043",
+      "category": "理論穴埋め",
+      "subcategory": "経過勘定",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "前受収益は「先にもらったけどまだサービス提供していない分」、未収収益は「もうサービス提供したけどまだもらっていない分」です。",
+      "tags": [
+        "前受収益",
+        "未収収益",
+        "経過勘定"
+      ],
+      "termDefinitions": [
+        {
+          "term": "前受収益",
+          "category": "負債",
+          "definition": "翌期以降に属する収益を前受けしたもの",
+          "realWorldExample": "来月分の家賃を先にもらった場合のまだ提供していない分"
+        },
+        {
+          "term": "未収収益",
+          "category": "資産",
+          "definition": "当期に属する収益でまだ受け取っていないもの",
+          "realWorldExample": "貸付金の利息で当期分だがまだ受け取っていないもの"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "当期に受け取ったが次期以降の収益となるものを[blank_1]という。当期の収益だが未収のものを[blank_2]という。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "前受収益",
+              "未収収益",
+              "前払費用",
+              "未払費用",
+              "繰延",
+              "見越"
+            ],
+            "correctAnswer": "前受収益"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "前受収益",
+              "未収収益",
+              "前払費用",
+              "未払費用",
+              "繰延",
+              "見越"
+            ],
+            "correctAnswer": "未収収益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_044",
+      "category": "理論穴埋め",
+      "subcategory": "経過勘定",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "発生主義では現金の動きではなく、費用・収益の発生時点で計上します。そのため前払・未払などの経過勘定が必要になります。",
+      "tags": [
+        "発生主義",
+        "経過勘定"
+      ],
+      "termDefinitions": [
+        {
+          "term": "発生主義",
+          "category": "会計原則",
+          "definition": "費用・収益を発生した期間に計上する考え方",
+          "realWorldExample": "電気を使った月に電気代を費用にする考え方（請求書の届く月ではなく）"
+        },
+        {
+          "term": "現金主義",
+          "category": "会計原則",
+          "definition": "現金の授受があった時点で計上する考え方",
+          "realWorldExample": "お金を実際に払った月に費用にする素朴な考え方"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "経過勘定が必要となる理由は、簿記が[blank_1]を採用しているからである。[blank_1]では、現金の授受に関わらず、[blank_2]と[blank_3]を発生した期間に計上する。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "発生主義",
+              "現金主義",
+              "実現主義",
+              "費用",
+              "収益",
+              "決算"
+            ],
+            "correctAnswer": "発生主義"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "発生主義",
+              "現金主義",
+              "実現主義",
+              "費用",
+              "収益",
+              "決算"
+            ],
+            "correctAnswer": "費用"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "発生主義",
+              "現金主義",
+              "実現主義",
+              "費用",
+              "収益",
+              "決算"
+            ],
+            "correctAnswer": "収益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_045",
+      "category": "理論穴埋め",
+      "subcategory": "経過勘定",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "再振替仕訳は期首に前期末の経過勘定の仕訳を逆にする手続きです。前払費用であれば、前払費用（貸方）/費用（借方）とします。",
+      "tags": [
+        "再振替仕訳",
+        "前払費用"
+      ],
+      "termDefinitions": [
+        {
+          "term": "再振替仕訳",
+          "category": "簿記手続",
+          "definition": "期首に前期末の経過勘定を元に戻す仕訳",
+          "realWorldExample": "前期末の調整を期首にリセットする作業"
+        },
+        {
+          "term": "前払費用",
+          "category": "資産",
+          "definition": "翌期の費用を前払いした分",
+          "realWorldExample": "まだ使っていない期間分の保険料や家賃"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "期首に前期の経過勘定を元に戻す仕訳を[blank_1]という。例えば前期末に計上した[blank_2]は、期首に費用勘定に振り替える。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "再振替仕訳",
+              "決算整理仕訳",
+              "開始仕訳",
+              "前払費用",
+              "未払費用",
+              "繰延"
+            ],
+            "correctAnswer": "再振替仕訳"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "再振替仕訳",
+              "決算整理仕訳",
+              "開始仕訳",
+              "前払費用",
+              "未払費用",
+              "繰延"
+            ],
+            "correctAnswer": "前払費用"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_046",
+      "category": "理論穴埋め",
+      "subcategory": "経過勘定",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "前払費用と未収収益は資産、前受収益と未払費用は負債に分類されます。将来受け取る権利が資産、将来支払う義務が負債です。",
+      "tags": [
+        "経過勘定",
+        "資産",
+        "負債"
+      ],
+      "termDefinitions": [
+        {
+          "term": "前払費用",
+          "category": "資産",
+          "definition": "前払いした次期以降の費用",
+          "realWorldExample": "先払いした家賃のうち来月分"
+        },
+        {
+          "term": "前受収益",
+          "category": "負債",
+          "definition": "前受けした次期以降の収益",
+          "realWorldExample": "先にもらった来月分の家賃"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "経過勘定のうち、[blank_1]と[blank_2]は[blank_3]に分類される。一方、[blank_4]と未払費用は負債に分類される。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "前払費用"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "未収収益"
+          },
+          {
+            "id": "blank_3",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "資産"
+          },
+          {
+            "id": "blank_4",
+            "options": [
+              "前払費用",
+              "未払費用",
+              "前受収益",
+              "未収収益",
+              "資産",
+              "負債"
+            ],
+            "correctAnswer": "前受収益"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_047",
+      "category": "理論穴埋め",
+      "subcategory": "会計原則",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "企業会計原則は日本の会計基準の基礎となる規範です。一般原則の筆頭として真実性の原則が挙げられ、正確な財務報告を求めています。",
+      "tags": [
+        "企業会計原則",
+        "真実性の原則"
+      ],
+      "termDefinitions": [
+        {
+          "term": "企業会計原則",
+          "category": "会計原則",
+          "definition": "企業の会計処理に関する基本的な規範",
+          "realWorldExample": "会社の帳簿のつけ方に関するルールブック"
+        },
+        {
+          "term": "真実性の原則",
+          "category": "会計原則",
+          "definition": "財務諸表が真実な報告を提供すべきという原則",
+          "realWorldExample": "嘘のない正確な報告書を作るべきというルール"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は企業の会計処理と報告に関する基本的な規範である。その一般原則の筆頭は[blank_2]であり、財務諸表が企業の真実な報告を提供することを求める。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "企業会計原則",
+              "正規の簿記の原則",
+              "継続性の原則",
+              "保守主義の原則",
+              "明瞭性の原則",
+              "真実性の原則"
+            ],
+            "correctAnswer": "企業会計原則"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "企業会計原則",
+              "正規の簿記の原則",
+              "継続性の原則",
+              "保守主義の原則",
+              "明瞭性の原則",
+              "真実性の原則"
+            ],
+            "correctAnswer": "真実性の原則"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_048",
+      "category": "理論穴埋め",
+      "subcategory": "会計原則",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "正規の簿記の原則は正確な帳簿作成を求め、継続性の原則は会計方法の安易な変更を禁じています。",
+      "tags": [
+        "正規の簿記の原則",
+        "継続性の原則"
+      ],
+      "termDefinitions": [
+        {
+          "term": "正規の簿記の原則",
+          "category": "会計原則",
+          "definition": "正確な会計帳簿の作成を求める原則",
+          "realWorldExample": "帳簿を正しいルールに従ってきちんとつけるべきというルール"
+        },
+        {
+          "term": "継続性の原則",
+          "category": "会計原則",
+          "definition": "会計処理方法を毎期継続して適用する原則",
+          "realWorldExample": "一度決めた計算方法を途中でコロコロ変えてはいけないというルール"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は、企業が正確な会計帳簿を作成しなければならないという原則である。[blank_2]は、一度採用した会計処理の方法をみだりに変更してはならないという原則である。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "企業会計原則",
+              "正規の簿記の原則",
+              "継続性の原則",
+              "保守主義の原則",
+              "明瞭性の原則",
+              "真実性の原則"
+            ],
+            "correctAnswer": "正規の簿記の原則"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "企業会計原則",
+              "正規の簿記の原則",
+              "継続性の原則",
+              "保守主義の原則",
+              "明瞭性の原則",
+              "真実性の原則"
+            ],
+            "correctAnswer": "継続性の原則"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_049",
+      "category": "理論穴埋め",
+      "subcategory": "会計原則",
+      "difficulty": 2,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "保守主義の原則は、利益を過大に計上せず、損失のおそれがある場合は慎重に見積もることを求めています。貸倒引当金の設定などに反映されます。",
+      "tags": [
+        "保守主義の原則"
+      ],
+      "termDefinitions": [
+        {
+          "term": "保守主義の原則",
+          "category": "会計原則",
+          "definition": "不確実な状況では慎重に判断すべきという原則",
+          "realWorldExample": "利益は控えめに、損失は早めに計上するという慎重な姿勢のルール"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は、企業の財政に不利な影響を及ぼす可能性がある場合に、慎重な判断を求める原則である。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "保守主義の原則",
+              "継続性の原則",
+              "明瞭性の原則",
+              "企業会計原則",
+              "正規の簿記の原則",
+              "真実性の原則"
+            ],
+            "correctAnswer": "保守主義の原則"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dai2_riron_050",
+      "category": "理論穴埋め",
+      "subcategory": "会計原則",
+      "difficulty": 1,
+      "questionType": "theory_fill",
+      "questionText": "次の文章の空欄に当てはまる語句を語群から選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "明瞭性の原則は、財務諸表を読む人が理解しやすいように、会計情報を明瞭に表示することを求める原則です。",
+      "tags": [
+        "明瞭性の原則",
+        "財務諸表"
+      ],
+      "termDefinitions": [
+        {
+          "term": "明瞭性の原則",
+          "category": "会計原則",
+          "definition": "財務諸表を分かりやすく表示すべきという原則",
+          "realWorldExample": "読む人がパッと見て分かるような報告書を作るべきというルール"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-B",
+      "format": "theory_fill",
+      "questionData": {
+        "type": "theoryFill",
+        "passage": "[blank_1]は、財務諸表の利用者にとって理解しやすいように、必要な会計事実を[blank_2]に表示すべきという原則である。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "options": [
+              "保守主義の原則",
+              "継続性の原則",
+              "明瞭性の原則",
+              "企業会計原則",
+              "正規の簿記の原則",
+              "真実性の原則"
+            ],
+            "correctAnswer": "明瞭性の原則"
+          },
+          {
+            "id": "blank_2",
+            "options": [
+              "明瞭",
+              "正確",
+              "簡潔",
+              "詳細",
+              "適正",
+              "慎重"
+            ],
+            "correctAnswer": "明瞭"
+          }
+        ]
+      }
+    }
+  ]
+}

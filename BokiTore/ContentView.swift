@@ -28,5 +28,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: [UserProgress.self, StudyStreak.self], inMemory: true)
+        .modelContainer(.preview)
 }

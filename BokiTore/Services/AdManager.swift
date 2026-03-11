@@ -77,25 +77,13 @@ class AdManager: NSObject {
     /// インタースティシャル広告を表示する
     func showInterstitial() {
         guard !isAdFree, let ad = interstitialAd else {
-            // 広告がない場合は再読み込み
             loadInterstitial()
             return
         }
 
-        // 最前面のViewControllerを取得して広告を表示
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let rootVC = windowScene.windows.first?.rootViewController else { return }
-
-        // 最前面のVCを再帰的に探す
-        var topVC = rootVC
-        while let presented = topVC.presentedViewController {
-            topVC = presented
-        }
-
+        guard let topVC = Self.topViewController() else { return }
         ad.present(fromRootViewController: topVC)
         isInterstitialReady = false
-
-        // 次の広告を読み込む
         loadInterstitial()
     }
 
@@ -130,24 +118,34 @@ class AdManager: NSObject {
             return
         }
 
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let rootVC = windowScene.windows.first?.rootViewController else {
+        guard let topVC = Self.topViewController() else {
             completion(false)
             return
         }
 
-        var topVC = rootVC
-        while let presented = topVC.presentedViewController {
-            topVC = presented
-        }
-
         ad.present(fromRootViewController: topVC) {
-            // AdMobから報酬情報を取得して、報酬額が0より大きければ成功
             let reward = ad.adReward
             completion(reward.amount.doubleValue > 0)
         }
 
         isRewardedReady = false
         loadRewarded()
+    }
+
+    // MARK: - ヘルパー
+
+    /// 最前面のViewControllerを取得する（広告表示用）
+    private static func topViewController() -> UIViewController? {
+        guard let windowScene = UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene })
+            .first(where: { $0.activationState == .foregroundActive }),
+              let rootVC = windowScene.keyWindow?.rootViewController else {
+            return nil
+        }
+        var topVC = rootVC
+        while let presented = topVC.presentedViewController {
+            topVC = presented
+        }
+        return topVC
     }
 }

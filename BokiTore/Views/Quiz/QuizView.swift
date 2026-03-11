@@ -4,18 +4,29 @@ import SwiftData
 /// 問題画面 — 問題の表示と選択肢の選択
 struct QuizView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    /// プレミアム判定用（Environment経由で注入）
+    @Environment(StoreManager.self) private var storeManager
     @State private var viewModel: QuizViewModel
+    @State private var showQuitAlert = false
+    /// 診断モード（trueの場合、完了後にDiagnosisResultViewを表示）
+    private let isDiagnosisMode: Bool
 
     /// 指定された問題リストでクイズを開始
-    init(questions: [Question]) {
+    init(questions: [Question], isDiagnosisMode: Bool = false) {
         _viewModel = State(initialValue: QuizViewModel(questions: questions))
+        self.isDiagnosisMode = isDiagnosisMode
     }
 
     var body: some View {
         VStack(spacing: 0) {
             if viewModel.isCompleted {
-                // 結果画面へ遷移
-                QuizResultView(viewModel: viewModel)
+                // 結果画面へ遷移（診断モードは専用画面）
+                if isDiagnosisMode {
+                    DiagnosisResultView(viewModel: viewModel)
+                } else {
+                    QuizResultView(viewModel: viewModel)
+                }
             } else if let question = viewModel.currentQuestion {
                 // 問題表示
                 ScrollViewReader { proxy in
@@ -37,6 +48,9 @@ struct QuizView: View {
                                 .foregroundStyle(.secondary)
                             }
 
+                            // コンボインジケーター（3連続正解以上で表示）
+                            ComboIndicatorView(count: viewModel.consecutiveCorrectRun)
+
                             // 難易度バッジと正答状況
                             HStack {
                                 DifficultyBadge(level: question.difficulty)
@@ -54,29 +68,38 @@ struct QuizView: View {
                                 .fontWeight(.medium)
                                 .padding(.vertical)
 
-                            // 選択肢
-                            ForEach(question.choices) { choice in
-                                ChoiceButton(
-                                    choice: choice,
-                                    isSelected: viewModel.selectedAnswer == choice.id,
-                                    isCorrect: viewModel.showResult ? choice.id == question.correctAnswer : nil,
-                                    isDisabled: viewModel.showResult
-                                ) {
-                                    viewModel.selectAnswer(choice.id)
-                                }
-                            }
+                            // 選択肢（シャッフル済み — 正解が常に同じ位置にならないように）
+                            // フォーマット別の問題表示（multipleChoiceは従来のChoiceButton）
+                            QuestionContentView(question: question, viewModel: viewModel)
 
                             // 解説表示（解答後）
                             if viewModel.showResult {
+                                // 励ましメッセージ
+                                MotivationMessageView(
+                                    isCorrect: viewModel.isCurrentAnswerCorrect,
+                                    comboCount: viewModel.consecutiveCorrectRun
+                                )
+
                                 ExplanationView(
                                     isCorrect: viewModel.isCurrentAnswerCorrect,
+                                    question: question,
                                     explanation: question.explanation,
-                                    correctChoice: question.choices.first { $0.id == question.correctAnswer }
+                                    correctChoice: question.choices.first { $0.id == question.correctAnswer },
+                                    termDefinitions: question.termDefinitions
+                                )
+
+                                // ブックマークボタン
+                                BookmarkButton(
+                                    questionId: question.id,
+                                    wasCorrect: viewModel.isCurrentAnswerCorrect,
+                                    category: question.category
                                 )
 
                                 // 次の問題ボタン
                                 Button {
-                                    viewModel.nextQuestion(modelContext: modelContext)
+                                    withAnimation(.easeInOut(duration: 0.3)) {
+                                        viewModel.nextQuestion(modelContext: modelContext)
+                                    }
                                 } label: {
                                     Text(viewModel.isLastQuestion ? "結果を見る" : "次の問題 →")
                                         .font(.headline)
@@ -103,116 +126,33 @@ struct QuizView: View {
             }
 
             // バナー広告（プレミアム会員は非表示）
-            if !StoreManager.shared.isPremium {
+            if !storeManager.isPremium {
                 AdBannerPlaceholder()
             }
         }
         .navigationTitle("\(viewModel.currentIndex + 1)/\(viewModel.totalCount)")
         .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-/// 難易度バッジ
-struct DifficultyBadge: View {
-    let level: Int
-
-    /// 難易度に応じたラベルと色
-    private var config: (text: String, color: Color) {
-        switch level {
-        case 1: return ("基本", .appSecondary)
-        case 2: return ("標準", .orange)
-        case 3: return ("応用", .appError)
-        default: return ("--", .gray)
-        }
-    }
-
-    var body: some View {
-        Text(config.text)
-            .font(.caption2)
-            .fontWeight(.bold)
-            .padding(.horizontal, 8)
-            .padding(.vertical, 3)
-            .background(config.color.opacity(0.15))
-            .foregroundStyle(config.color)
-            .clipShape(Capsule())
-    }
-}
-
-/// 選択肢ボタン
-struct ChoiceButton: View {
-    let choice: Choice
-    let isSelected: Bool
-    let isCorrect: Bool?   // nil = まだ解答していない
-    let isDisabled: Bool
-    let action: () -> Void
-
-    /// ボタンの背景色を決定
-    private var backgroundColor: Color {
-        guard let isCorrect else {
-            return isSelected ? Color.appPrimary.opacity(0.1) : Color(.systemBackground)
-        }
-        if isCorrect && isSelected {
-            return Color.appSecondary.opacity(0.15)
-        } else if !isCorrect && isSelected {
-            return Color.appError.opacity(0.15)
-        } else if isCorrect {
-            // 正解の選択肢は常に緑（未選択でも）
-            return Color.appSecondary.opacity(0.08)
-        }
-        return Color(.systemBackground)
-    }
-
-    /// ボタンの枠線色
-    private var borderColor: Color {
-        guard let isCorrect else {
-            return isSelected ? .appPrimary : Color(.separator)
-        }
-        if isCorrect {
-            return .appSecondary
-        } else if isSelected {
-            return .appError
-        }
-        return Color(.separator)
-    }
-
-    var body: some View {
-        Button(action: action) {
-            VStack(alignment: .leading, spacing: 4) {
-                Text("\(choice.id.uppercased()).")
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.secondary)
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("(借) \(choice.debit)")
-                        Text("(貸) \(choice.credit)")
-                    }
-                    .font(.body)
-                    Spacer()
-
-                    // 解答後のアイコン表示
-                    if let isCorrect {
-                        if isCorrect {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundStyle(Color.appSecondary)
-                        } else if isSelected {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundStyle(Color.appError)
+        .navigationBarBackButtonHidden(!viewModel.isCompleted)
+        .toolbar {
+            if !viewModel.isCompleted {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        showQuitAlert = true
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: "chevron.left")
+                            Text("戻る")
                         }
                     }
                 }
             }
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(backgroundColor)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(borderColor, lineWidth: 1.5)
-            )
         }
-        .disabled(isDisabled)
-        .foregroundStyle(.primary)
+        .alert("クイズを中断しますか？", isPresented: $showQuitAlert) {
+            Button("続ける", role: .cancel) { }
+            Button("中断する", role: .destructive) { dismiss() }
+        } message: {
+            Text("現在の進捗は保存されません。")
+        }
     }
 }
 
@@ -220,5 +160,6 @@ struct ChoiceButton: View {
     NavigationStack {
         QuizView(questions: QuestionLoader.shared.allQuestions)
     }
+    .environment(StoreManager.shared)
     .modelContainer(for: [UserProgress.self, StudyStreak.self], inMemory: true)
 }

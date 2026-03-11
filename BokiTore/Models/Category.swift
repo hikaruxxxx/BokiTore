@@ -1,4 +1,4 @@
-import Foundation
+import SwiftUI
 
 /// 問題カテゴリの定義
 enum QuestionCategory: String, CaseIterable, Identifiable {
@@ -77,6 +77,51 @@ enum JournalEntrySubcategory: String, CaseIterable, Identifiable {
         case .adjustingEntries: return 45
         case .trialBalance: return 25
         case .worksheet: return 20
+        }
+    }
+}
+
+// MARK: - 試験セクション
+
+/// 簿記3級本試験のセクション区分
+enum ExamSection: String, CaseIterable, Identifiable {
+    case dai1 = "第1問"
+    case dai2_1 = "第2問⑴"
+    case dai2_2a = "第2問⑵-A"
+    case dai2_2b = "第2問⑵-B"
+
+    var id: String { rawValue }
+
+    /// 表示名
+    var displayName: String { rawValue }
+
+    /// セクションの説明
+    var subtitle: String {
+        switch self {
+        case .dai1: return "CBT仕訳入力"
+        case .dai2_1: return "T勘定空欄補充"
+        case .dai2_2a: return "補助簿選択"
+        case .dai2_2b: return "理論穴埋め"
+        }
+    }
+
+    /// セクションのアイコン
+    var iconName: String {
+        switch self {
+        case .dai1: return "pencil.and.list.clipboard"
+        case .dai2_1: return "tablecells"
+        case .dai2_2a: return "checklist"
+        case .dai2_2b: return "text.book.closed"
+        }
+    }
+
+    /// セクションのカラー
+    var color: Color {
+        switch self {
+        case .dai1: return .appPrimary
+        case .dai2_1: return .orange
+        case .dai2_2a: return .purple
+        case .dai2_2b: return .indigo
         }
     }
 }

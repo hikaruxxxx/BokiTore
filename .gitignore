@@ -26,3 +26,6 @@ Pods/
 
 # Secrets (never commit real IDs)
 # Constants.swift contains test IDs only
+
+# Firebase設定ファイル（実際のplistはGitに含めない）
+**/GoogleService-Info.plist

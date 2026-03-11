@@ -1,0 +1,4841 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "dai2_hojo_001",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 掛仕入→仕入帳・買掛金元帳・商品有高帳。② 掛売上→売上帳・売掛金元帳・商品有高帳。③ 売掛金の現金回収→現金出納帳・売掛金元帳。④ 備品購入で小切手→当座預金出納帳・固定資産台帳。⑤ 給料は商品取引ではないので現金出納帳のみ。",
+      "tags": [
+        "仕入帳",
+        "売上帳",
+        "現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "問屋から商品を買った記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "お客さんに商品を売った記録帳"
+        },
+        {
+          "term": "商品有高帳",
+          "category": "補助簿",
+          "definition": "商品の受払と残高を記録する帳簿",
+          "realWorldExample": "倉庫の在庫管理表"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① A商店から商品¥80,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② B商店に商品¥120,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ C商店から売掛金¥50,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 備品¥300,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 給料¥250,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_002",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 手形による売上→売上帳・受取手形記入帳・商品有高帳。② 手形による仕入→仕入帳・支払手形記入帳・商品有高帳。③ 手形の満期決済→当座預金出納帳・受取手形記入帳。④ 買掛金の現金支払→現金出納帳・買掛金元帳。⑤ 小口現金の支出→小口現金出納帳のみ。",
+      "tags": [
+        "受取手形記入帳",
+        "支払手形記入帳",
+        "小口現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形の増減を記録する帳簿",
+          "realWorldExample": "もらった約束手形の管理台帳"
+        },
+        {
+          "term": "支払手形記入帳",
+          "category": "補助簿",
+          "definition": "支払手形の増減を記録する帳簿",
+          "realWorldExample": "振り出した約束手形の管理台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① D商店に商品¥60,000を売り上げ、約束手形を受け取った。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② E商店から商品¥45,000を仕入れ、約束手形を振り出して支払った。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 当座預金に受取手形¥100,000が満期決済された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 買掛金¥70,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 小口現金から文房具代¥3,000を支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_003",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 現金仕入→現金出納帳・仕入帳・商品有高帳。② 掛売上→売上帳・売掛金元帳・商品有高帳。③ 預金振替→当座預金出納帳（普通預金の出納帳は補助簿に含まれない）。④ 売掛金の当座預金回収→当座預金出納帳・売掛金元帳。⑤ 修繕費は商品取引でないため現金出納帳のみ。",
+      "tags": [
+        "現金出納帳",
+        "当座預金出納帳",
+        "売掛金元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "現金出納帳",
+          "category": "補助簿",
+          "definition": "現金の収入・支出を記録する帳簿",
+          "realWorldExample": "財布の出入りを毎日記録する帳面"
+        },
+        {
+          "term": "当座預金出納帳",
+          "category": "補助簿",
+          "definition": "当座預金の入出金を記録する帳簿",
+          "realWorldExample": "当座預金口座の通帳のような記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥90,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥150,000を売り上げ、代金は掛けとした。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 普通預金から当座預金に¥200,000を振り替えた。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 売掛金¥80,000を回収し、当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 建物の修繕費¥50,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_004",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 手形+掛の複合仕入→仕入帳・支払手形記入帳・買掛金元帳・商品有高帳。② 手形受取の売上→売上帳・受取手形記入帳・商品有高帳。③ 水道光熱費は普通預金→該当する補助簿なし。④ 車両購入で当座預金→当座預金出納帳・固定資産台帳。⑤ 小切手で買掛金支払→当座預金出納帳・買掛金元帳。",
+      "tags": [
+        "仕入帳",
+        "買掛金元帳",
+        "支払手形記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "買掛金元帳",
+          "category": "補助簿",
+          "definition": "仕入先ごとの買掛金残高を記録する帳簿",
+          "realWorldExample": "問屋ごとの未払い額を管理する台帳"
+        },
+        {
+          "term": "固定資産台帳",
+          "category": "補助簿",
+          "definition": "固定資産の取得・償却・売却を記録する帳簿",
+          "realWorldExample": "会社の設備や車の管理台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① F商店から商品¥100,000を仕入れ、代金のうち¥40,000は約束手形を振り出し、残額は掛けとした。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② G商店に商品¥70,000を売り上げ、代金は同店振出の約束手形で受け取った。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 水道光熱費¥15,000を普通預金から振込で支払った。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 車両運搬具¥1,500,000を購入し、当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 仕入先H商店に買掛金¥60,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_005",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 一部現金・残額掛の売上→現金出納帳・売上帳・売掛金元帳・商品有高帳。② 買掛金の手形決済→支払手形記入帳・買掛金元帳。③ 借入金→当座預金出納帳のみ。④ 掛仕入→仕入帳・買掛金元帳・商品有高帳。⑤ 売上返品→売上帳・売掛金元帳・商品有高帳。⑥ 保険料→現金出納帳のみ。",
+      "tags": [
+        "売上帳",
+        "売掛金元帳",
+        "買掛金元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売掛金元帳",
+          "category": "補助簿",
+          "definition": "得意先ごとの売掛金残高を記録する帳簿",
+          "realWorldExample": "お客さんごとのツケの残高管理帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "商品を売った記録をまとめたノート"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥200,000を売り上げ、¥80,000は現金で受け取り、残額は掛けとした。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 仕入先I商店に対する買掛金¥90,000について、約束手形を振り出して支払った。",
+            "correctSubledgers": [
+              "支払手形記入帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 銀行から¥500,000を借り入れ、当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ J商店から商品¥55,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 前月売り上げた商品¥10,000が品違いのため返品された（掛け）。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_006",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 掛売上→売上帳・売掛金元帳・商品有高帳。② 現金仕入→現金出納帳・仕入帳・商品有高帳。③ 売掛金を手形で回収→受取手形記入帳・売掛金元帳。④ 小口現金支出→小口現金出納帳のみ。⑤ 土地購入→当座預金出納帳・固定資産台帳。",
+      "tags": [
+        "売上帳",
+        "受取手形記入帳",
+        "固定資産台帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形の増減を記録する帳簿",
+          "realWorldExample": "約束手形の受取・決済を管理する台帳"
+        },
+        {
+          "term": "固定資産台帳",
+          "category": "補助簿",
+          "definition": "固定資産の情報を記録する帳簿",
+          "realWorldExample": "土地や建物の取得・売却を管理する台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① K商店に商品¥130,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② L商店から商品¥75,000を仕入れ、代金は現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 得意先M商店から売掛金¥100,000の支払いとして、同店振出の約束手形を受け取った。",
+            "correctSubledgers": [
+              "受取手形記入帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 消耗品費¥8,000を小口現金で支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 土地¥5,000,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_007",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 掛仕入→仕入帳・買掛金元帳・商品有高帳。② 広告費は現金出納帳のみ。③ 他人振出小切手は現金→現金出納帳・売上帳・商品有高帳。④ 支払手形の決済→当座預金出納帳・支払手形記入帳。⑤ 借入金返済は普通預金→該当する補助簿なし。",
+      "tags": [
+        "仕入帳",
+        "現金出納帳",
+        "支払手形記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "現金出納帳",
+          "category": "補助簿",
+          "definition": "現金の入出金を記録する帳簿",
+          "realWorldExample": "レジの現金の動きを記録するノート"
+        },
+        {
+          "term": "支払手形記入帳",
+          "category": "補助簿",
+          "definition": "支払手形の増減を記録する帳簿",
+          "realWorldExample": "約束手形の振出・決済を管理する台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① N商店から商品¥40,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 広告宣伝費¥25,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ O商店に商品¥95,000を売り上げ、代金は小切手で受け取った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 支払手形¥150,000が満期となり、当座預金から決済された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 借入金¥200,000を利息¥5,000とともに普通預金から返済した。",
+            "correctSubledgers": []
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_008",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 現金+掛の複合仕入→現金出納帳・仕入帳・買掛金元帳・商品有高帳。② 売掛金の当座預金回収→当座預金出納帳・売掛金元帳。③ 減価償却→固定資産台帳のみ。④ 手形+現金の複合売上→現金出納帳・売上帳・受取手形記入帳・商品有高帳。⑤ 小口現金補給→当座預金出納帳・小口現金出納帳。",
+      "tags": [
+        "仕入帳",
+        "売上帳",
+        "小口現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "小口現金出納帳",
+          "category": "補助簿",
+          "definition": "小口現金の支出明細を記録する帳簿",
+          "realWorldExample": "少額経費の使用記録帳"
+        },
+        {
+          "term": "商品有高帳",
+          "category": "補助簿",
+          "definition": "商品の受入・払出・残高を記録する帳簿",
+          "realWorldExample": "在庫の増減を管理する台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① P商店から商品¥110,000を仕入れ、代金のうち¥50,000は現金で支払い、残額は掛けとした。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② Q商店に対する売掛金¥85,000が当座預金に振り込まれた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 備品の減価償却費¥40,000を計上した。",
+            "correctSubledgers": [
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ R商店に商品¥65,000を売り上げ、約束手形¥30,000と現金¥35,000を受け取った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 小口現金係に¥20,000を小切手を振り出して補給した。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "小口現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_009",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 掛売上→売上帳・売掛金元帳・商品有高帳。② 手形仕入→仕入帳・支払手形記入帳・商品有高帳。③ 家賃支払→当座預金出納帳のみ。④ 当座預金への預入→現金出納帳・当座預金出納帳。⑤ 買掛金の現金支払→現金出納帳・買掛金元帳。",
+      "tags": [
+        "売上帳",
+        "支払手形記入帳",
+        "買掛金元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "売上取引を記録する帳簿",
+          "realWorldExample": "商品を売った明細を記録するノート"
+        },
+        {
+          "term": "買掛金元帳",
+          "category": "補助簿",
+          "definition": "仕入先別の買掛金残高を管理する帳簿",
+          "realWorldExample": "各問屋への未払い額管理台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① S商店に商品¥180,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② T商店から商品¥70,000を仕入れ、約束手形を振り出して支払った。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 家賃¥100,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 現金¥300,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ U商店に対する買掛金¥55,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_010",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 電子記録債務は手形記入帳の対象外→仕入帳・商品有高帳のみ。② 電子記録債権→売上帳・商品有高帳のみ。③ 電子記録債権の回収→当座預金出納帳のみ。④ 仕入返品→仕入帳・買掛金元帳・商品有高帳。⑤ 建物購入→固定資産台帳のみ（普通預金は補助簿対象外）。⑥ 売掛金の現金回収→現金出納帳・売掛金元帳。",
+      "tags": [
+        "仕入帳",
+        "売上帳",
+        "電子記録債権"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "問屋から商品を買った記録帳"
+        },
+        {
+          "term": "固定資産台帳",
+          "category": "補助簿",
+          "definition": "固定資産の取得・償却等を記録する帳簿",
+          "realWorldExample": "会社の設備の管理台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① V商店から商品¥95,000を仕入れ、電子記録債務を発生させた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② W商店に商品¥140,000を売り上げ、電子記録債権が発生した。",
+            "correctSubledgers": [
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 電子記録債権¥80,000が当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 前月仕入れた商品¥15,000を品質不良で返品した（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 建物¥2,000,000を購入し、普通預金から支払った。",
+            "correctSubledgers": [
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 得意先X商店の売掛金¥60,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_011",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 現金売上→現金出納帳・売上帳・商品有高帳。② 手形決済→当座預金出納帳・受取手形記入帳。③ 買掛金の現金支払→現金出納帳・買掛金元帳。④ 掛仕入+引取運賃の現金支払→現金出納帳・仕入帳・買掛金元帳・商品有高帳。⑤ 小口現金→小口現金出納帳のみ。",
+      "tags": [
+        "仕入帳",
+        "受取手形記入帳",
+        "小口現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "現金出納帳",
+          "category": "補助簿",
+          "definition": "現金の入出金を記録する帳簿",
+          "realWorldExample": "レジの現金を管理する帳面"
+        },
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形の増減を記録する帳簿",
+          "realWorldExample": "手形の受取・決済管理帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 得意先から受取手形¥120,000が満期決済され、当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 仕入先に買掛金¥45,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥85,000を掛けで仕入れ、引取運賃¥2,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 旅費交通費¥12,000を小口現金から支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_012",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 手形+現金+掛の複合売上→現金出納帳・売上帳・受取手形記入帳・売掛金元帳・商品有高帳。② 小切手で買掛金支払→当座預金出納帳・買掛金元帳。③ 所得税納付→現金出納帳のみ。④ 備品売却（未収入金）→固定資産台帳のみ（売掛金元帳ではない）。⑤ 掛仕入→仕入帳・買掛金元帳・商品有高帳。",
+      "tags": [
+        "売上帳",
+        "受取手形記入帳",
+        "固定資産台帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "売上取引の明細を記録する帳簿",
+          "realWorldExample": "商品を売った記録をまとめたノート"
+        },
+        {
+          "term": "固定資産台帳",
+          "category": "補助簿",
+          "definition": "固定資産の取得・売却等を記録する帳簿",
+          "realWorldExample": "設備の管理台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥200,000を売り上げ、代金のうち¥80,000は約束手形、¥70,000は現金、残額は掛けとした。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "受取手形記入帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 仕入先に対する買掛金¥60,000について、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 所得税預り金¥30,000を現金で納付した。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 備品を¥150,000で売却し、代金は月末に受け取ることにした。",
+            "correctSubledgers": [
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥35,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_013",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 掛仕入→仕入帳・買掛金元帳・商品有高帳。② 掛売上→売上帳・売掛金元帳・商品有高帳。③ 通信費→現金出納帳のみ。④ 引出し→現金出納帳・当座預金出納帳。⑤ 他人振出小切手=現金→現金出納帳・売掛金元帳。",
+      "tags": [
+        "仕入帳",
+        "売掛金元帳",
+        "現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品仕入の明細を記録する帳簿",
+          "realWorldExample": "仕入れた商品の記録帳"
+        },
+        {
+          "term": "売掛金元帳",
+          "category": "補助簿",
+          "definition": "得意先別の売掛金を管理する帳簿",
+          "realWorldExample": "お客さんごとのツケ管理帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥65,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥100,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 通信費¥5,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 当座預金から¥50,000を引き出して現金にした。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 得意先から売掛金¥100,000を小切手で受け取った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_014",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 現金+掛の複合仕入→現金出納帳・仕入帳・買掛金元帳・商品有高帳。② 売掛金の手形回収→受取手形記入帳・売掛金元帳。③ 備品購入（未払金）→固定資産台帳のみ。④ 手形割引→当座預金出納帳・受取手形記入帳。⑤ 給料支払→現金出納帳のみ。",
+      "tags": [
+        "受取手形記入帳",
+        "固定資産台帳",
+        "現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形の増減を記録する帳簿",
+          "realWorldExample": "手形の受取・割引・決済を管理する台帳"
+        },
+        {
+          "term": "固定資産台帳",
+          "category": "補助簿",
+          "definition": "固定資産の取得・売却を記録する帳簿",
+          "realWorldExample": "設備の取得価額・償却状況を管理する台帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥160,000を仕入れ、¥60,000は現金、残額は掛けとした。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 売掛金¥75,000の回収として、約束手形を受け取った。",
+            "correctSubledgers": [
+              "受取手形記入帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 備品¥500,000を購入し、代金は月末払いとした。",
+            "correctSubledgers": [
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 受取手形¥90,000を銀行で割り引き、手取金を当座預金に入金した。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 給料¥180,000から所得税¥15,000を差し引いて現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_015",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 現金売上→現金出納帳・売上帳・商品有高帳。② 掛仕入→仕入帳・買掛金元帳・商品有高帳。③ 手形仕入→仕入帳・支払手形記入帳・商品有高帳。④ 売掛金の現金回収→現金出納帳・売掛金元帳。⑤ 小口現金→小口現金出納帳のみ。",
+      "tags": [
+        "仕入帳",
+        "売掛金元帳",
+        "支払手形記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "支払手形記入帳",
+          "category": "補助簿",
+          "definition": "支払手形の増減を記録する帳簿",
+          "realWorldExample": "振り出した手形の管理台帳"
+        },
+        {
+          "term": "小口現金出納帳",
+          "category": "補助簿",
+          "definition": "小口現金の支出明細を記録する帳簿",
+          "realWorldExample": "日常の少額経費の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥45,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥55,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 約束手形¥100,000を振り出して商品を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 売掛金¥70,000が現金で入金された。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 小口現金から交通費¥2,500を支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_016",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 電子記録債権による売上→売上帳・商品有高帳（受取手形記入帳は手形のみ）。② 電子記録債務による買掛金支払→買掛金元帳のみ。③ 掛仕入→仕入帳・買掛金元帳・商品有高帳。④ 普通預金預入→現金出納帳のみ。⑤ 支払手形決済→当座預金出納帳・支払手形記入帳。",
+      "tags": [
+        "売上帳",
+        "買掛金元帳",
+        "支払手形記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "売上取引を記録する帳簿",
+          "realWorldExample": "商品の販売記録帳"
+        },
+        {
+          "term": "買掛金元帳",
+          "category": "補助簿",
+          "definition": "仕入先別の買掛金を管理する帳簿",
+          "realWorldExample": "各仕入先への未払額管理帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥120,000を売り上げ、代金として電子記録債権が発生した。",
+            "correctSubledgers": [
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 買掛金¥80,000を支払うため電子記録債務を発生させた。",
+            "correctSubledgers": [
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 商品¥90,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 現金¥500,000を普通預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 支払手形¥70,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_017",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 現金仕入→現金出納帳・仕入帳・商品有高帳。② 掛売上→売上帳・売掛金元帳・商品有高帳。③ 租税公課→現金出納帳のみ。④ 手形売上→売上帳・受取手形記入帳・商品有高帳。⑤ 買掛金の当座預金支払→当座預金出納帳・買掛金元帳。",
+      "tags": [
+        "仕入帳",
+        "売上帳",
+        "受取手形記入帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品仕入の明細帳",
+          "realWorldExample": "仕入取引の詳細記録帳"
+        },
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形を管理する帳簿",
+          "realWorldExample": "手形の受取と決済の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥75,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥110,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 租税公課¥20,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を受け取って商品¥85,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 買掛金¥40,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_018",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 買掛金の手形支払→支払手形記入帳・買掛金元帳。② 現金+掛の複合売上→現金出納帳・売上帳・売掛金元帳・商品有高帳。③ 車両売却の現金受取→現金出納帳・固定資産台帳。④ 掛仕入→仕入帳・買掛金元帳・商品有高帳。⑤ 小口現金→小口現金出納帳のみ。",
+      "tags": [
+        "支払手形記入帳",
+        "固定資産台帳",
+        "小口現金出納帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "支払手形記入帳",
+          "category": "補助簿",
+          "definition": "支払手形の増減を管理する帳簿",
+          "realWorldExample": "振出した手形の管理台帳"
+        },
+        {
+          "term": "固定資産台帳",
+          "category": "補助簿",
+          "definition": "固定資産の情報を管理する帳簿",
+          "realWorldExample": "車や建物の取得・売却記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 仕入先に掛代金¥50,000を約束手形で支払った。",
+            "correctSubledgers": [
+              "支払手形記入帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥140,000を売り上げ、¥90,000は掛け、¥50,000は現金で受け取った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 車両運搬具を¥80,000で売却し、現金を受け取った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥60,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 水道光熱費¥18,000を小口現金から支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_019",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 掛仕入→仕入帳・買掛金元帳・商品有高帳。② 現金売上→現金出納帳・売上帳・商品有高帳。③ 手形決済→当座預金出納帳・受取手形記入帳。④ 小口現金→小口現金出納帳のみ。⑤ 小切手をただちに預入→当座預金出納帳・売掛金元帳。",
+      "tags": [
+        "仕入帳",
+        "当座預金出納帳",
+        "売掛金元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "当座預金出納帳",
+          "category": "補助簿",
+          "definition": "当座預金の入出金を記録する帳簿",
+          "realWorldExample": "当座預金口座の動きを管理する帳面"
+        },
+        {
+          "term": "売掛金元帳",
+          "category": "補助簿",
+          "definition": "得意先別の売掛金を管理する帳簿",
+          "realWorldExample": "お客さんごとの未回収額管理帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥60,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥80,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 受取手形¥55,000が満期決済され、当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 消耗品¥6,000を小口現金で購入した。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 売掛金¥100,000を小切手で回収し、ただちに当座預金に預け入れた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_020",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① 手形+小切手+掛の複合売上→現金出納帳（他人振出小切手=現金）・売上帳・受取手形記入帳・売掛金元帳・商品有高帳。② 買掛金の現金支払→現金出納帳・買掛金元帳。③ 立替金の回収→現金出納帳のみ。④ 掛仕入→仕入帳・買掛金元帳・商品有高帳。⑤ 修繕費の小切手支払→当座預金出納帳のみ。",
+      "tags": [
+        "売上帳",
+        "受取手形記入帳",
+        "買掛金元帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "売上取引の明細を記録する帳簿",
+          "realWorldExample": "商品販売の記録帳"
+        },
+        {
+          "term": "受取手形記入帳",
+          "category": "補助簿",
+          "definition": "受取手形の増減を管理する帳簿",
+          "realWorldExample": "手形の受取と決済の管理帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥300,000を売り上げ、代金のうち¥100,000は約束手形、¥100,000は小切手、残額は掛けとした。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "受取手形記入帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 仕入先に買掛金¥120,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 従業員に対する立替金¥10,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥55,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 建物の修繕費¥80,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_021",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・売上帳・商品有高帳。② →仕入帳・買掛金元帳・商品有高帳。③ →売上帳・受取手形記入帳・商品有高帳。④ →仕入帳・買掛金元帳・商品有高帳。⑤ →当座預金出納帳・支払手形記入帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥40,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 約束手形を受け取って商品¥110,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥20,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 支払手形¥100,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_022",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →売上帳・売掛金元帳・商品有高帳。② →現金出納帳。③ →現金出納帳・売掛金元帳。④ →仕入帳・支払手形記入帳・商品有高帳。⑤ →当座預金出納帳・買掛金元帳。⑥ →当座預金出納帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥80,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 給料¥250,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 売掛金¥100,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 買掛金¥40,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 広告宣伝費¥50,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_023",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・当座預金出納帳。② →現金出納帳。③ →現金出納帳・売上帳・商品有高帳。④ →現金出納帳・仕入帳・商品有高帳。⑤ →当座預金出納帳・受取手形記入帳。⑥ →該当する補助簿なし。⑦ →現金出納帳・売掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 現金¥100,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 保険料¥24,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 受取手形¥80,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 売掛金¥60,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_024",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →売上帳・受取手形記入帳・商品有高帳。② →現金出納帳・当座預金出納帳。③ →該当する補助簿なし。④ →現金出納帳・売掛金元帳。⑤ →売上帳・売掛金元帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 約束手形を受け取って商品¥90,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 売掛金¥50,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥120,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_025",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・仕入帳・商品有高帳。② →小口現金出納帳。③ →売上帳・売掛金元帳・商品有高帳。④ →現金出納帳。⑤ →当座預金出納帳・支払手形記入帳。⑥ →現金出納帳・売上帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 小口現金から消耗品費¥8,000を支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 商品¥90,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 給料¥300,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 支払手形¥100,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_026",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳・固定資産台帳。② →現金出納帳・仕入帳・商品有高帳。③ →現金出納帳・当座預金出納帳。④ →売上帳・受取手形記入帳・商品有高帳。⑤ →仕入帳・支払手形記入帳・商品有高帳。⑥ →現金出納帳。⑦ →当座預金出納帳・買掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 備品¥300,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を受け取って商品¥90,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 給料¥200,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 買掛金¥60,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_027",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →仕入帳・買掛金元帳・商品有高帳。② →当座預金出納帳。③ →現金出納帳・売掛金元帳。④ →売上帳・受取手形記入帳・商品有高帳。⑤ →当座預金出納帳・固定資産台帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥20,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 広告宣伝費¥50,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 売掛金¥60,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を受け取って商品¥110,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 備品¥300,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_028",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・仕入帳・商品有高帳。② →当座預金出納帳・固定資産台帳。③ →現金出納帳・当座預金出納帳。④ →当座預金出納帳・支払手形記入帳。⑤ →売上帳・売掛金元帳・商品有高帳。⑥ →当座預金出納帳・買掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 備品¥500,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 現金¥100,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 支払手形¥100,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥80,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 買掛金¥80,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_029",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →該当する補助簿なし。② →売上帳・受取手形記入帳・商品有高帳。③ →当座預金出納帳・固定資産台帳。④ →当座預金出納帳。⑤ →現金出納帳・売上帳・商品有高帳。⑥ →仕入帳・買掛金元帳・商品有高帳。⑦ →仕入帳・支払手形記入帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 借入金¥500,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_2",
+            "description": "② 約束手形を受け取って商品¥70,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 備品¥500,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 広告宣伝費¥50,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 商品¥20,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_030",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →仕入帳・支払手形記入帳・商品有高帳。② →現金出納帳。③ →当座預金出納帳・買掛金元帳。④ →現金出納帳・売上帳・商品有高帳。⑤ →現金出納帳・当座預金出納帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 約束手形を振り出して商品¥60,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 保険料¥48,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 買掛金¥60,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥60,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 現金¥500,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_031",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →売上帳・受取手形記入帳・商品有高帳。② →売上帳・売掛金元帳・商品有高帳。③ →該当する補助簿なし。④ →現金出納帳・当座預金出納帳。⑤ →当座預金出納帳・買掛金元帳。⑥ →当座預金出納帳・受取手形記入帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 約束手形を受け取って商品¥70,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥90,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 買掛金¥40,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 受取手形¥100,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_032",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳・受取手形記入帳。② →当座預金出納帳・支払手形記入帳。③ →該当する補助簿なし。④ →現金出納帳。⑤ →当座預金出納帳・固定資産台帳。⑥ →売上帳・受取手形記入帳・商品有高帳。⑦ →当座預金出納帳・買掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 受取手形¥120,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 支払手形¥80,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 保険料¥24,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 備品¥200,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 約束手形を受け取って商品¥90,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 買掛金¥80,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_033",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・売掛金元帳。② →当座預金出納帳・支払手形記入帳。③ →現金出納帳。④ →仕入帳・支払手形記入帳・商品有高帳。⑤ →現金出納帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 売掛金¥100,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 支払手形¥60,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 給料¥250,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を振り出して商品¥80,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 保険料¥48,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_034",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・仕入帳・商品有高帳。② →当座預金出納帳・受取手形記入帳。③ →現金出納帳・売掛金元帳。④ →当座預金出納帳・固定資産台帳。⑤ →該当する補助簿なし。⑥ →売上帳・売掛金元帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 受取手形¥80,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 売掛金¥80,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 備品¥200,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 借入金¥500,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 商品¥120,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_035",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 1,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →仕入帳・買掛金元帳・商品有高帳。② →仕入帳・買掛金元帳・商品有高帳。③ →該当する補助簿なし。④ →当座預金出納帳。⑤ →売上帳・受取手形記入帳・商品有高帳。⑥ →現金出納帳・売掛金元帳。⑦ →現金出納帳・当座預金出納帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥15,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥50,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 広告宣伝費¥50,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 約束手形を受け取って商品¥110,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 売掛金¥50,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_036",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →売上帳・売掛金元帳・商品有高帳。② →当座預金出納帳・固定資産台帳。③ →仕入帳・買掛金元帳・商品有高帳。④ →現金出納帳・売上帳・商品有高帳。⑤ →売上帳・受取手形記入帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥100,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 備品¥300,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 商品¥60,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥60,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 約束手形を受け取って商品¥110,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_037",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳・受取手形記入帳。② →仕入帳・買掛金元帳・商品有高帳。③ →現金出納帳。④ →仕入帳・買掛金元帳・商品有高帳。⑤ →現金出納帳・売上帳・商品有高帳。⑥ →仕入帳・支払手形記入帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 受取手形¥100,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥15,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥60,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥60,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_038",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →仕入帳・支払手形記入帳・商品有高帳。② →現金出納帳・仕入帳・商品有高帳。③ →当座預金出納帳・支払手形記入帳。④ →仕入帳・買掛金元帳・商品有高帳。⑤ →現金出納帳。⑥ →現金出納帳・売掛金元帳。⑦ →当座預金出納帳・固定資産台帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 約束手形を振り出して商品¥60,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 支払手形¥100,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥40,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 売掛金¥100,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 備品¥300,000を購入し、小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "固定資産台帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_039",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳。② →仕入帳・買掛金元帳・商品有高帳。③ →現金出納帳・売掛金元帳。④ →該当する補助簿なし。⑤ →現金出納帳・売上帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 給料¥250,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥15,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 売掛金¥80,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_040",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →該当する補助簿なし。② →当座預金出納帳・買掛金元帳。③ →当座預金出納帳・受取手形記入帳。④ →小口現金出納帳。⑤ →現金出納帳。⑥ →現金出納帳・売掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 借入金¥500,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_2",
+            "description": "② 買掛金¥80,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 受取手形¥80,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 小口現金から消耗品費¥5,000を支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 売掛金¥80,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_041",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳・買掛金元帳。② →現金出納帳・仕入帳・商品有高帳。③ →仕入帳・支払手形記入帳・商品有高帳。④ →当座預金出納帳・支払手形記入帳。⑤ →該当する補助簿なし。⑥ →現金出納帳・売掛金元帳。⑦ →当座預金出納帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 買掛金¥60,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥30,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 支払手形¥60,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 売掛金¥50,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 広告宣伝費¥50,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_042",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳・支払手形記入帳。② →仕入帳・買掛金元帳・商品有高帳。③ →現金出納帳。④ →現金出納帳。⑤ →現金出納帳・売掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 支払手形¥80,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥20,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 給料¥200,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 売掛金¥50,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_043",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →該当する補助簿なし。② →現金出納帳・売上帳・商品有高帳。③ →小口現金出納帳。④ →売上帳・受取手形記入帳・商品有高帳。⑤ →当座預金出納帳。⑥ →仕入帳・買掛金元帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 借入金¥200,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥60,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 小口現金から消耗品費¥8,000を支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を受け取って商品¥110,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 広告宣伝費¥30,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 商品¥50,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_044",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・当座預金出納帳。② →現金出納帳。③ →現金出納帳。④ →売上帳・受取手形記入帳・商品有高帳。⑤ →仕入帳・買掛金元帳・商品有高帳。⑥ →現金出納帳・売上帳・商品有高帳。⑦ →仕入帳・支払手形記入帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 給料¥300,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を受け取って商品¥110,000を売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "受取手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥15,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 商品¥70,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 約束手形を振り出して商品¥80,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_045",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・仕入帳・商品有高帳。② →現金出納帳。③ →現金出納帳・当座預金出納帳。④ →当座預金出納帳・支払手形記入帳。⑤ →現金出納帳・売上帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥40,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 給料¥250,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 支払手形¥100,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_046",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・仕入帳・商品有高帳。② →現金出納帳・売上帳・商品有高帳。③ →現金出納帳・当座預金出納帳。④ →仕入帳・支払手形記入帳・商品有高帳。⑤ →当座預金出納帳・受取手形記入帳。⑥ →現金出納帳・売掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥60,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 現金¥200,000を当座預金に預け入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 受取手形¥100,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 売掛金¥60,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_047",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳・支払手形記入帳。② →現金出納帳。③ →現金出納帳・売上帳・商品有高帳。④ →現金出納帳。⑤ →仕入帳・買掛金元帳・商品有高帳。⑥ →該当する補助簿なし。⑦ →当座預金出納帳・受取手形記入帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 支払手形¥80,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 保険料¥36,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 商品¥70,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 給料¥300,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥15,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 借入金¥500,000を普通預金から返済した。",
+            "correctSubledgers": []
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 受取手形¥120,000が満期決済され当座預金に入金された。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "受取手形記入帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_048",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →売上帳・売掛金元帳・商品有高帳。② →現金出納帳・売上帳・商品有高帳。③ →当座預金出納帳・買掛金元帳。④ →仕入帳・買掛金元帳・商品有高帳。⑤ →現金出納帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥100,000を掛けで売り上げた。",
+            "correctSubledgers": [
+              "売上帳",
+              "売掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 商品¥60,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 買掛金¥80,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 商品¥15,000の仕入返品を行った（掛け）。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 給料¥250,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_049",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →現金出納帳・売上帳・商品有高帳。② →現金出納帳。③ →当座預金出納帳・支払手形記入帳。④ →仕入帳・支払手形記入帳・商品有高帳。⑤ →現金出納帳・仕入帳・商品有高帳。⑥ →当座預金出納帳・買掛金元帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 商品¥50,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 給料¥200,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 支払手形¥100,000が満期決済され当座預金から引き落とされた。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "支払手形記入帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 約束手形を振り出して商品¥100,000を仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "支払手形記入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 買掛金¥40,000を小切手を振り出して支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳",
+              "買掛金元帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    },
+    {
+      "id": "dai2_hojo_050",
+      "category": "補助簿選択",
+      "subcategory": "補助簿",
+      "difficulty": 2,
+      "questionType": "subledger_select",
+      "questionText": "次の各取引について、記入される補助簿をすべて選びなさい。",
+      "choices": [],
+      "correctAnswer": "",
+      "explanation": "① →当座預金出納帳。② →現金出納帳。③ →仕入帳・買掛金元帳・商品有高帳。④ →現金出納帳・売掛金元帳。⑤ →現金出納帳・仕入帳・商品有高帳。⑥ →小口現金出納帳。⑦ →現金出納帳・売上帳・商品有高帳。",
+      "tags": [
+        "補助簿",
+        "仕入帳",
+        "売上帳"
+      ],
+      "termDefinitions": [
+        {
+          "term": "仕入帳",
+          "category": "補助簿",
+          "definition": "商品の仕入取引を記録する帳簿",
+          "realWorldExample": "仕入れの記録帳"
+        },
+        {
+          "term": "売上帳",
+          "category": "補助簿",
+          "definition": "商品の売上取引を記録する帳簿",
+          "realWorldExample": "売上の記録帳"
+        }
+      ],
+      "frequencyRank": "B",
+      "examSection": "第2問⑵-A",
+      "format": "subledger_select",
+      "questionData": {
+        "type": "subledgerSelect",
+        "transactions": [
+          {
+            "id": "tx_1",
+            "description": "① 広告宣伝費¥50,000を当座預金から支払った。",
+            "correctSubledgers": [
+              "当座預金出納帳"
+            ]
+          },
+          {
+            "id": "tx_2",
+            "description": "② 保険料¥24,000を現金で支払った。",
+            "correctSubledgers": [
+              "現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_3",
+            "description": "③ 商品¥50,000を掛けで仕入れた。",
+            "correctSubledgers": [
+              "仕入帳",
+              "買掛金元帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_4",
+            "description": "④ 売掛金¥50,000を現金で回収した。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売掛金元帳"
+            ]
+          },
+          {
+            "id": "tx_5",
+            "description": "⑤ 商品¥50,000を現金で仕入れた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "仕入帳",
+              "商品有高帳"
+            ]
+          },
+          {
+            "id": "tx_6",
+            "description": "⑥ 小口現金から消耗品費¥3,000を支払った。",
+            "correctSubledgers": [
+              "小口現金出納帳"
+            ]
+          },
+          {
+            "id": "tx_7",
+            "description": "⑦ 商品¥70,000を現金で売り上げた。",
+            "correctSubledgers": [
+              "現金出納帳",
+              "売上帳",
+              "商品有高帳"
+            ]
+          }
+        ],
+        "subledgerOptions": [
+          "現金出納帳",
+          "当座預金出納帳",
+          "小口現金出納帳",
+          "仕入帳",
+          "売上帳",
+          "受取手形記入帳",
+          "支払手形記入帳",
+          "売掛金元帳",
+          "買掛金元帳",
+          "商品有高帳",
+          "固定資産台帳"
+        ]
+      }
+    }
+  ]
+}

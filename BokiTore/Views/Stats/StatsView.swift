@@ -3,8 +3,20 @@ import SwiftData
 
 /// 統計画面 — 学習進捗の表示
 struct StatsView: View {
+    /// プレミアム判定用（Environment経由で注入）
+    @Environment(StoreManager.self) private var storeManager
     @Query(sort: \UserProgress.answeredAt, order: .reverse) private var allProgress: [UserProgress]
+    /// 今日の解答履歴（日付フィルタ済み — 全件ロードを回避）
+    @Query private var todayProgress: [UserProgress]
     @Query(sort: \StudyStreak.date, order: .reverse) private var streaks: [StudyStreak]
+
+    init() {
+        // 今日の解答をSQLレベルでフィルタ（allProgressの再フィルタを回避）
+        let today = Calendar.current.startOfDay(for: .now)
+        _todayProgress = Query(
+            filter: #Predicate<UserProgress> { $0.answeredAt >= today }
+        )
+    }
 
     /// 総解答数
     private var totalAnswered: Int { allProgress.count }
@@ -19,35 +31,18 @@ struct StatsView: View {
     /// 学習日数
     private var studyDays: Int { streaks.count }
 
-    /// 連続学習日数
+    /// 連続学習日数（共通ロジック使用）
     private var consecutiveDays: Int {
-        guard !streaks.isEmpty else { return 0 }
-        var count = 0
-        let calendar = Calendar.current
-        var checkDate = calendar.startOfDay(for: .now)
-
-        for streak in streaks {
-            let streakDate = calendar.startOfDay(for: streak.date)
-            if streakDate == checkDate {
-                count += 1
-                checkDate = calendar.date(byAdding: .day, value: -1, to: checkDate)!
-            } else {
-                break
-            }
-        }
-        return count
+        streaks.consecutiveDays()
     }
 
-    /// 今日の解答数
+    /// 今日の解答数（フィルタ済みQueryから取得）
     private var todayAnswered: Int {
-        let today = Calendar.current.startOfDay(for: .now)
-        return allProgress.filter { $0.answeredAt >= today }.count
+        todayProgress.count
     }
 
-    /// 今日の正答率
+    /// 今日の正答率（フィルタ済みQueryから取得）
     private var todayAccuracy: Int {
-        let today = Calendar.current.startOfDay(for: .now)
-        let todayProgress = allProgress.filter { $0.answeredAt >= today }
         guard !todayProgress.isEmpty else { return 0 }
         let correct = todayProgress.filter { $0.isCorrect }.count
         return Int(Double(correct) / Double(todayProgress.count) * 100)
@@ -66,6 +61,15 @@ struct StatsView: View {
 
     var body: some View {
         NavigationStack {
+            if allProgress.isEmpty {
+                // 初回起動時の空状態
+                ContentUnavailableView(
+                    "まだ学習データがありません",
+                    systemImage: "chart.bar.doc.horizontal",
+                    description: Text("問題を解くと、ここに学習統計が表示されます。")
+                )
+                .navigationTitle("学習統計")
+            } else {
             List {
                 // 今日の学習
                 Section("今日の学習") {
@@ -82,9 +86,19 @@ struct StatsView: View {
                     StatRow(label: "連続学習", value: "\(consecutiveDays)日", icon: "flame.fill", color: .orange)
                 }
 
+                // ストリークマイルストーン
+                Section {
+                    StreakMilestoneSection(consecutiveDays: consecutiveDays)
+                }
+
                 // 直近7日間のアクティビティ
                 Section("直近7日間") {
                     WeeklyActivityView(streaks: streaks)
+                }
+
+                // カテゴリ別マスタリー
+                Section("カテゴリ別マスタリー") {
+                    MasteryBadgesView(allProgress: allProgress)
                 }
 
                 // カテゴリ別正答率
@@ -130,10 +144,11 @@ struct StatsView: View {
             }
             .navigationTitle("学習統計")
             .safeAreaInset(edge: .bottom) {
-                if !StoreManager.shared.isPremium {
+                if !storeManager.isPremium {
                     AdBannerPlaceholder()
                 }
             }
+            } // else (データがある場合)
         }
     }
 
@@ -173,136 +188,8 @@ struct StatsView: View {
     }
 }
 
-/// 週間アクティビティ表示（棒グラフ風）
-struct WeeklyActivityView: View {
-    let streaks: [StudyStreak]
-
-    /// 直近7日間のデータ
-    private var weekData: [(date: Date, count: Int)] {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: .now)
-
-        return (0..<7).reversed().map { dayOffset in
-            let date = calendar.date(byAdding: .day, value: -dayOffset, to: today)!
-            let count = streaks
-                .first { calendar.startOfDay(for: $0.date) == date }?
-                .questionsAnswered ?? 0
-            return (date: date, count: count)
-        }
-    }
-
-    /// 最大解答数（グラフのスケール用）
-    private var maxCount: Int {
-        max(weekData.map { $0.count }.max() ?? 1, 1)
-    }
-
-    var body: some View {
-        HStack(alignment: .bottom, spacing: 8) {
-            ForEach(weekData, id: \.date) { data in
-                VStack(spacing: 4) {
-                    // 解答数ラベル
-                    if data.count > 0 {
-                        Text("\(data.count)")
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
-                    }
-
-                    // バー
-                    RoundedRectangle(cornerRadius: 4)
-                        .fill(data.count > 0 ? Color.appPrimary : Color(.systemFill))
-                        .frame(height: max(CGFloat(data.count) / CGFloat(maxCount) * 60, 4))
-
-                    // 曜日ラベル
-                    Text(data.date.shortWeekday)
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                }
-                .frame(maxWidth: .infinity)
-            }
-        }
-        .padding(.vertical, 8)
-    }
-}
-
-/// 円形プログレスビュー（苦手問題の正答率表示用）
-struct CircularProgressView: View {
-    let progress: Double
-
-    /// 正答率に応じた色
-    private var color: Color {
-        if progress >= 0.8 { return .appSecondary }
-        if progress >= 0.5 { return .orange }
-        return .appError
-    }
-
-    var body: some View {
-        ZStack {
-            Circle()
-                .stroke(Color(.systemFill), lineWidth: 4)
-            Circle()
-                .trim(from: 0, to: progress)
-                .stroke(color, style: StrokeStyle(lineWidth: 4, lineCap: .round))
-                .rotationEffect(.degrees(-90))
-            Text("\(Int(progress * 100))")
-                .font(.caption2)
-                .fontWeight(.bold)
-        }
-    }
-}
-
-/// 統計行（アイコン付き）
-struct StatRow: View {
-    let label: String
-    let value: String
-    var icon: String = ""
-    var color: Color = .appPrimary
-
-    var body: some View {
-        HStack {
-            if !icon.isEmpty {
-                Image(systemName: icon)
-                    .foregroundStyle(color)
-                    .frame(width: 24)
-            }
-            Text(label)
-            Spacer()
-            Text(value)
-                .fontWeight(.semibold)
-                .foregroundStyle(color)
-        }
-    }
-}
-
-/// カテゴリ別正答率行（プログレスバー付き）
-struct CategoryAccuracyRow: View {
-    let name: String
-    let accuracy: Int
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack {
-                Text(name)
-                    .font(.subheadline)
-                Spacer()
-                Text("\(accuracy)%")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(accuracyColor)
-            }
-            ProgressView(value: Double(accuracy), total: 100)
-                .tint(accuracyColor)
-        }
-    }
-
-    /// 正答率に応じた色
-    private var accuracyColor: Color {
-        if accuracy >= 80 { return .appSecondary }
-        if accuracy >= 60 { return .orange }
-        return .appError
-    }
-}
-
 #Preview {
     StatsView()
-        .modelContainer(for: [UserProgress.self, StudyStreak.self], inMemory: true)
+        .environment(StoreManager.shared)
+        .modelContainer(.preview)
 }

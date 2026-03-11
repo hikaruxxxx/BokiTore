@@ -1,0 +1,60 @@
+{
+  "banners": [
+    {
+      "id": "fp_promo",
+      "title": "FP技能検定にも挑戦！",
+      "subtitle": "簿記の次はFP",
+      "appStoreUrl": "https://apps.apple.com/app/idXXXXXX",
+      "iconName": "fp_icon",
+      "enabled": false,
+      "targetCerts": ["fp"],
+      "targetPurposes": null,
+      "placement": null
+    },
+    {
+      "id": "toeic_promo",
+      "title": "TOEIC対策アプリ",
+      "subtitle": "スキマ時間で英語力UP",
+      "appStoreUrl": "https://apps.apple.com/app/idYYYYYY",
+      "iconName": "toeic_icon",
+      "enabled": false,
+      "targetCerts": ["toeic"],
+      "targetPurposes": null,
+      "placement": null
+    },
+    {
+      "id": "takken_promo",
+      "title": "宅建アプリで不動産の知識UP",
+      "subtitle": "ダブルライセンスで差をつけよう",
+      "appStoreUrl": "https://apps.apple.com/app/idZZZZZZ",
+      "iconName": "takken_icon",
+      "enabled": false,
+      "targetCerts": ["takken"],
+      "targetPurposes": null,
+      "placement": null
+    },
+    {
+      "id": "it_passport_promo",
+      "title": "ITパスポートに挑戦！",
+      "subtitle": "IT基礎力をプラス",
+      "appStoreUrl": "https://apps.apple.com/app/idWWWWWW",
+      "iconName": "it_icon",
+      "enabled": false,
+      "targetCerts": ["it_pass"],
+      "targetPurposes": null,
+      "placement": null
+    },
+    {
+      "id": "career_up_generic",
+      "title": "転職・昇進に効く資格まとめ",
+      "subtitle": "簿記と相性の良い資格は？",
+      "appStoreUrl": "https://apps.apple.com/app/idVVVVVV",
+      "iconName": "career_icon",
+      "enabled": false,
+      "targetCerts": null,
+      "targetPurposes": ["career_up", "job_hunting"],
+      "placement": "settings"
+    }
+  ],
+  "showFrequency": "once_per_session"
+}

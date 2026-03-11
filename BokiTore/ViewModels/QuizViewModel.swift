@@ -6,8 +6,13 @@ import SwiftData
 class QuizViewModel {
     /// 学習セッション（問題リストと解答結果を保持）
     var session: StudySession
-    /// 選択中の解答
-    var selectedAnswer: String?
+    /// 現在のユーザー解答（フォーマット別）
+    var currentAnswer: UserAnswer?
+
+    /// multipleChoiceの選択ID（後方互換: ChoiceButton表示判定用）
+    var selectedAnswerId: String? {
+        currentAnswer?.multipleChoiceId
+    }
     /// 解答結果を表示中かどうか
     var showResult = false
     /// 問題の開始時刻（所要時間を計測するため）
@@ -16,11 +21,25 @@ class QuizViewModel {
     var elapsedTime: TimeInterval = 0
     /// タイマー用のTimerインスタンス
     private var timer: Timer?
+    /// 連続正解カウンター（デイリーチャレンジ用・コンボ表示用）
+    private(set) var consecutiveCorrectRun: Int = 0
+    /// 問題ごとのシャッフル済み選択肢（正解が常に同じ位置にならないように）
+    private var shuffledChoicesMap: [String: [Choice]] = [:]
 
     /// 指定された問題リストでViewModelを初期化
     init(questions: [Question]) {
-        self.session = StudySession(questions: questions.shuffled())
+        let shuffled = questions.shuffled()
+        self.session = StudySession(questions: shuffled)
+        // 各問題の選択肢をシャッフルして保持（問題中に順番が変わらないように）
+        for question in shuffled {
+            shuffledChoicesMap[question.id] = question.choices.shuffled()
+        }
         startTimer()
+    }
+
+    /// 現在の問題のシャッフル済み選択肢を返す
+    func shuffledChoices(for question: Question) -> [Choice] {
+        shuffledChoicesMap[question.id] ?? question.choices
     }
 
     deinit {
@@ -69,10 +88,10 @@ class QuizViewModel {
     /// 最後の問題か
     var isLastQuestion: Bool { currentIndex >= totalCount - 1 }
 
-    /// 現在の解答が正解か
+    /// 現在の解答が正解か（AnswerCheckerに委譲）
     var isCurrentAnswerCorrect: Bool {
-        guard let question = currentQuestion, let answer = selectedAnswer else { return false }
-        return answer == question.correctAnswer
+        guard let question = currentQuestion, let answer = currentAnswer else { return false }
+        return AnswerChecker.check(question: question, answer: answer)
     }
 
     /// 間違えた問題のリスト
@@ -102,11 +121,11 @@ class QuizViewModel {
 
     // MARK: - アクション
 
-    /// 選択肢を選択して解答する
-    func selectAnswer(_ answerId: String) {
+    /// 解答を提出する（全フォーマット共通のエントリポイント）
+    func submitAnswer(_ answer: UserAnswer) {
         guard !showResult, let question = currentQuestion else { return }
 
-        selectedAnswer = answerId
+        currentAnswer = answer
         showResult = true
 
         // タイマーを停止
@@ -116,9 +135,36 @@ class QuizViewModel {
         let timeSpent = Date.now.timeIntervalSince(questionStartTime)
         session.timesSpent[question.id] = timeSpent
 
-        // 正解/不正解を記録
-        let isCorrect = answerId == question.correctAnswer
+        // 正解/不正解を記録（AnswerCheckerに委譲）
+        let isCorrect = AnswerChecker.check(question: question, answer: answer)
         session.answers[question.id] = isCorrect
+
+        // 連続正解カウンターを更新
+        if isCorrect {
+            consecutiveCorrectRun += 1
+            // コンボマイルストーンで追加フィードバック（3の倍数）
+            if consecutiveCorrectRun >= 3 && consecutiveCorrectRun.isMultiple(of: 3) {
+                FeedbackManager.combo()
+            }
+        } else {
+            consecutiveCorrectRun = 0
+        }
+
+        // 触覚・サウンドフィードバック
+        if isCorrect {
+            FeedbackManager.correct()
+        } else {
+            FeedbackManager.incorrect()
+        }
+
+        // Firebase Analyticsに問題回答イベントを送信
+        AnalyticsManager.logQuestionAnswered(
+            questionId: question.id,
+            category: question.category,
+            subcategory: question.subcategory,
+            isCorrect: isCorrect,
+            timeSpentSec: timeSpent
+        )
 
         // 広告マネージャーに解答数を通知
         AdManager.shared.incrementAnswerCount()
@@ -133,7 +179,7 @@ class QuizViewModel {
 
         // 先に次の問題へ進む（データ保存が失敗してもクイズは継続できるように）
         session.currentIndex += 1
-        selectedAnswer = nil
+        currentAnswer = nil
         showResult = false
         questionStartTime = .now
         elapsedTime = 0
@@ -153,6 +199,17 @@ class QuizViewModel {
 
         // 連続学習記録を更新
         updateStudyStreak(modelContext: modelContext, isCorrect: isCorrect)
+
+        // デイリーチャレンジの進捗を更新
+        DailyChallengeManager.shared.updateMissionProgress(
+            modelContext: modelContext,
+            question: question,
+            isCorrect: isCorrect,
+            consecutiveCorrectRun: consecutiveCorrectRun
+        )
+
+        // 復習アイテムを更新（間隔反復学習）
+        updateReviewItem(modelContext: modelContext, questionId: question.id, isCorrect: isCorrect)
     }
 
     /// 連続学習記録を更新する
@@ -184,6 +241,57 @@ class QuizViewModel {
         } catch {
             #if DEBUG
             print("StudyStreak更新エラー: \(error)")
+            #endif
+        }
+    }
+
+    /// 復習アイテムを更新する（間隔反復学習）
+    /// 不正解: ReviewItem作成/リセット → 翌日に復習
+    /// 正解 & ReviewItem存在: 次のインターバルへ進む
+    private func updateReviewItem(modelContext: ModelContext, questionId: String, isCorrect: Bool) {
+        do {
+            let descriptor = FetchDescriptor<ReviewItem>(
+                predicate: #Predicate { $0.questionId == questionId }
+            )
+            let existing = try modelContext.fetch(descriptor)
+
+            if isCorrect {
+                // 正解: 既存のReviewItemがあればインターバルを進める
+                if let item = existing.first {
+                    item.intervalStep += 1
+                    item.consecutiveCorrectCount += 1
+
+                    let intervals = Constants.Gamification.reviewIntervals
+                    if item.intervalStep >= intervals.count {
+                        // マスター済み → 削除
+                        modelContext.delete(item)
+                    } else {
+                        // 次の復習日を設定
+                        let daysUntilNext = intervals[item.intervalStep]
+                        item.nextReviewDate = Date.now.daysFromNow(daysUntilNext)
+                    }
+                }
+                // ReviewItemがない正解問題は何もしない
+            } else {
+                // 不正解: ReviewItemを作成またはリセット
+                if let item = existing.first {
+                    // リセット
+                    item.intervalStep = 0
+                    item.consecutiveCorrectCount = 0
+                    item.lastIncorrectAt = .now
+                    item.nextReviewDate = Date.now.tomorrow
+                } else {
+                    // 新規作成
+                    let item = ReviewItem(
+                        questionId: questionId,
+                        nextReviewDate: Date.now.tomorrow
+                    )
+                    modelContext.insert(item)
+                }
+            }
+        } catch {
+            #if DEBUG
+            print("ReviewItem更新エラー: \(error)")
             #endif
         }
     }

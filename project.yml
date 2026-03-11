@@ -18,6 +18,9 @@ packages:
   GoogleMobileAds:
     url: https://github.com/googleads/swift-package-manager-google-mobile-ads
     from: "11.0.0"
+  firebase-ios-sdk:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: "11.0.0"
 
 targets:
   BokiTore:
@@ -29,6 +32,8 @@ targets:
           - "**/.DS_Store"
     dependencies:
       - package: GoogleMobileAds
+      - package: firebase-ios-sdk
+        product: FirebaseAnalytics
     settings:
       base:
         INFOPLIST_FILE: BokiTore/Info.plist
