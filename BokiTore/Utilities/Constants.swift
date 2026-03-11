@@ -30,8 +30,8 @@ enum Constants {
     // MARK: - URL
     enum URLs {
         /// プライバシーポリシー
-        static let privacyPolicy = "https://example.com/privacy"
+        static let privacyPolicy = "https://hikaruxxxx.github.io/BokiTore/privacy.html"
         /// 利用規約
-        static let termsOfService = "https://example.com/terms"
+        static let termsOfService = "https://hikaruxxxx.github.io/BokiTore/terms.html"
     }
 }

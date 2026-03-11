@@ -48,10 +48,10 @@
 4+
 
 ## サポートURL
-https://[GitHubユーザー名].github.io/BokiTore/privacy.html
+https://hikaruxxxx.github.io/BokiTore/privacy.html
 
 ## プライバシーポリシーURL
-https://[GitHubユーザー名].github.io/BokiTore/privacy.html
+https://hikaruxxxx.github.io/BokiTore/privacy.html
 
 ## 利用規約URL
-https://[GitHubユーザー名].github.io/BokiTore/terms.html
+https://hikaruxxxx.github.io/BokiTore/terms.html
