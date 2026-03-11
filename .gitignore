@@ -1,0 +1,28 @@
+# Xcode
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+DerivedData/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# SPM
+.build/
+.swiftpm/
+
+# CocoaPods (not used but just in case)
+Pods/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets (never commit real IDs)
+# Constants.swift contains test IDs only

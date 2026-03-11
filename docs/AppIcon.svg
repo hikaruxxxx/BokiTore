@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- 帳簿モチーフ（開いた本） -->
+  <!-- 左ページ -->
+  <rect x="180" y="280" width="300" height="420" rx="8" fill="white" opacity="0.95"/>
+  <!-- 右ページ -->
+  <rect x="544" y="280" width="300" height="420" rx="8" fill="white" opacity="0.95"/>
+  <!-- 背表紙（中央の影） -->
+  <rect x="480" y="280" width="64" height="420" fill="white" opacity="0.8"/>
+  <rect x="504" y="280" width="16" height="420" fill="#2563EB" opacity="0.15"/>
+
+  <!-- 左ページの罫線（仕訳帳をイメージ） -->
+  <!-- 縦線（借方/貸方の区切り） -->
+  <line x1="340" y1="320" x2="340" y2="660" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <!-- 横線 -->
+  <line x1="210" y1="370" x2="450" y2="370" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="210" y1="420" x2="450" y2="420" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="210" y1="470" x2="450" y2="470" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="210" y1="520" x2="450" y2="520" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="210" y1="570" x2="450" y2="570" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="210" y1="620" x2="450" y2="620" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- 左ページのテキスト（借方） -->
+  <text x="230" y="355" font-family="Hiragino Sans, sans-serif" font-size="28" font-weight="600" fill="#2563EB">借方</text>
+  <text x="370" y="355" font-family="Hiragino Sans, sans-serif" font-size="28" font-weight="600" fill="#2563EB">貸方</text>
+
+  <!-- 仕訳の内容を示すバー -->
+  <rect x="220" y="385" width="90" height="22" rx="4" fill="#2563EB" opacity="0.2"/>
+  <rect x="355" y="385" width="80" height="22" rx="4" fill="#10B981" opacity="0.2"/>
+  <rect x="220" y="435" width="70" height="22" rx="4" fill="#2563EB" opacity="0.15"/>
+  <rect x="355" y="435" width="85" height="22" rx="4" fill="#10B981" opacity="0.15"/>
+  <rect x="220" y="485" width="95" height="22" rx="4" fill="#2563EB" opacity="0.2"/>
+  <rect x="355" y="485" width="75" height="22" rx="4" fill="#10B981" opacity="0.2"/>
+
+  <!-- 右ページ: チェックマーク（正解を示す） -->
+  <circle cx="694" cy="440" r="80" fill="#10B981" opacity="0.15"/>
+  <path d="M 650 440 L 680 475 L 740 400" stroke="#10B981" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- 右ページのスコア表示 -->
+  <text x="694" y="570" font-family="system-ui, sans-serif" font-size="36" font-weight="700" fill="#1E293B" text-anchor="middle">90%</text>
+  <text x="694" y="610" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#64748B" text-anchor="middle">正答率</text>
+
+  <!-- アプリ名 -->
+  <text x="512" y="810" font-family="Hiragino Sans, sans-serif" font-size="72" font-weight="800" fill="white" text-anchor="middle" letter-spacing="8">簿記トレ</text>
+</svg>
