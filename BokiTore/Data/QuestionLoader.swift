@@ -19,6 +19,7 @@ class QuestionLoader {
         do {
             // バンドル内のJSONファイルを探す
             guard let url = Bundle.main.url(forResource: "QuestionBank", withExtension: "json") else {
+                assertionFailure("QuestionBank.jsonがバンドルに含まれていません。ビルド設定を確認してください。")
                 #if DEBUG
                 print("QuestionBank.jsonが見つかりません")
                 #endif

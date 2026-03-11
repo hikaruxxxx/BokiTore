@@ -160,7 +160,7 @@ class QuizViewModel {
         do {
             let calendar = Calendar.current
             let today = calendar.startOfDay(for: .now)
-            let tomorrow = calendar.date(byAdding: .day, value: 1, to: today)!
+            guard let tomorrow = calendar.date(byAdding: .day, value: 1, to: today) else { return }
 
             // 今日のStreakを検索（Date範囲で検索してクラッシュを回避）
             let descriptor = FetchDescriptor<StudyStreak>(

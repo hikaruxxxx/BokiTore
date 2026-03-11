@@ -32,7 +32,8 @@ class StudyStreak {
     var correctCount: Int
 
     init(date: Date, questionsAnswered: Int = 0, correctCount: Int = 0) {
-        self.date = date
+        // 日付を00:00:00に正規化（ストリーク計算のずれを防止）
+        self.date = Calendar.current.startOfDay(for: date)
         self.questionsAnswered = questionsAnswered
         self.correctCount = correctCount
     }

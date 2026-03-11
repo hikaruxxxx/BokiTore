@@ -142,8 +142,9 @@ class AdManager: NSObject {
         }
 
         ad.present(fromRootViewController: topVC) {
-            // 報酬が付与された
-            completion(true)
+            // AdMobから報酬情報を取得して、報酬額が0より大きければ成功
+            let reward = ad.adReward
+            completion(reward.amount.doubleValue > 0)
         }
 
         isRewardedReady = false
