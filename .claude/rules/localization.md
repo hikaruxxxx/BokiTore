@@ -1,0 +1,1 @@
+/Users/hikarumori/Developer/ios-dev-rules/rules/localization.md
