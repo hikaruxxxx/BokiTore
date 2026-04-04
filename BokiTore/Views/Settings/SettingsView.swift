@@ -149,33 +149,33 @@ struct PremiumSection: View {
                     }
                     .padding(.vertical, 4)
 
-                    // 購入ボタン
-                    Button {
-                        // Firebase Analyticsにサブスクリプションタップイベントを送信
+                    // 月額プラン購入ボタン
+                    PurchaseButton(
+                        label: "\(store.premiumPriceText)で購入",
+                        isPurchasing: store.isPurchasing,
+                        isDisabled: store.isPurchasing || store.monthlyProduct == nil
+                    ) {
                         AnalyticsManager.logSubscriptionTapped(screenName: "settings")
                         Task {
-                            if let product = store.products.first {
+                            if let product = store.monthlyProduct {
                                 _ = await store.purchase(product)
                             }
                         }
-                    } label: {
-                        HStack {
-                            Spacer()
-                            if store.isPurchasing {
-                                ProgressView()
-                                    .tint(.white)
-                            } else {
-                                Text("\(store.premiumPriceText)で購入")
-                                    .fontWeight(.semibold)
-                            }
-                            Spacer()
-                        }
-                        .padding(.vertical, 10)
-                        .background(Color.appPrimary)
-                        .foregroundStyle(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
-                    .disabled(store.isPurchasing || store.products.isEmpty)
+
+                    // 年間プラン購入ボタン
+                    PurchaseButton(
+                        label: "\(store.premiumYearlyPriceText)で購入（お得）",
+                        isPurchasing: store.isPurchasing,
+                        isDisabled: store.isPurchasing || store.yearlyProduct == nil
+                    ) {
+                        AnalyticsManager.logSubscriptionTapped(screenName: "settings")
+                        Task {
+                            if let product = store.yearlyProduct {
+                                _ = await store.purchase(product)
+                            }
+                        }
+                    }
 
                     // エラーメッセージ
                     if let error = store.errorMessage {
@@ -198,9 +198,44 @@ struct PremiumSection: View {
             Text("プレミアム")
         } footer: {
             if !store.isPremium {
-                Text("サブスクリプションは自動更新されます。管理はiOSの設定から行えます。")
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("サブスクリプションは自動更新されます。管理はiOSの設定から行えます。")
+                    if let eulaURL = URL(string: Constants.URLs.appleEULA) {
+                        Link("利用許諾契約（EULA）", destination: eulaURL)
+                            .font(.caption2)
+                    }
+                }
             }
         }
+    }
+}
+
+/// 購入ボタン
+struct PurchaseButton: View {
+    let label: String
+    let isPurchasing: Bool
+    let isDisabled: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack {
+                Spacer()
+                if isPurchasing {
+                    ProgressView()
+                        .tint(.white)
+                } else {
+                    Text(label)
+                        .fontWeight(.semibold)
+                }
+                Spacer()
+            }
+            .padding(.vertical, 10)
+            .background(Color.appPrimary)
+            .foregroundStyle(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+        }
+        .disabled(isDisabled)
     }
 }
 

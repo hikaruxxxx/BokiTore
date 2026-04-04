@@ -55,7 +55,7 @@ class StoreManager {
     /// 検証済みトランザクションを処理する
     @MainActor
     private func handleVerifiedTransaction(_ transaction: Transaction) {
-        if transaction.productID == Constants.Store.premiumMonthlyProductId {
+        if Constants.Store.allProductIds.contains(transaction.productID) {
             // 有効期限チェック（返金・キャンセルの場合はrevocationDateが設定される）
             if transaction.revocationDate == nil {
                 isPremium = true
@@ -72,8 +72,7 @@ class StoreManager {
     /// プロダクト情報をApp Store Connectから取得する
     func fetchProducts() async {
         do {
-            let productIds = [Constants.Store.premiumMonthlyProductId]
-            products = try await Product.products(for: productIds)
+            products = try await Product.products(for: Constants.Store.allProductIds)
         } catch {
             #if DEBUG
             print("プロダクト取得エラー: \(error)")
@@ -153,7 +152,7 @@ class StoreManager {
     private func checkCurrentEntitlements() async {
         for await result in Transaction.currentEntitlements {
             if case .verified(let transaction) = result {
-                if transaction.productID == Constants.Store.premiumMonthlyProductId,
+                if Constants.Store.allProductIds.contains(transaction.productID),
                    transaction.revocationDate == nil {
                     isPremium = true
                     AdManager.shared.isAdFree = true
@@ -163,9 +162,25 @@ class StoreManager {
         }
     }
 
+    /// 月額プロダクト
+    var monthlyProduct: Product? {
+        products.first { $0.id == Constants.Store.premiumMonthlyProductId }
+    }
+
+    /// 年間プロダクト
+    var yearlyProduct: Product? {
+        products.first { $0.id == Constants.Store.premiumYearlyProductId }
+    }
+
     /// プレミアムプランの月額表示テキスト
     var premiumPriceText: String {
-        guard let product = products.first else { return "¥480/月" }
+        guard let product = monthlyProduct else { return "¥480/月" }
         return product.displayPrice + "/月"
+    }
+
+    /// プレミアムプランの年間表示テキスト
+    var premiumYearlyPriceText: String {
+        guard let product = yearlyProduct else { return "¥2,000/年" }
+        return product.displayPrice + "/年"
     }
 }

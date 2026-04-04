@@ -23,8 +23,12 @@ enum Constants {
 
     // MARK: - StoreKit
     enum Store {
-        /// サブスクリプションのプロダクトID
+        /// 月額サブスクリプションのプロダクトID
         static let premiumMonthlyProductId = "com.bokitore.premium.monthly"
+        /// 年間サブスクリプションのプロダクトID
+        static let premiumYearlyProductId = "com.bokitore.premium.yearly"
+        /// 全サブスクリプションプロダクトID
+        static let allProductIds = [premiumMonthlyProductId, premiumYearlyProductId]
     }
 
     // MARK: - ゲーミフィケーション設定
@@ -72,5 +76,7 @@ enum Constants {
         static let privacyPolicy = "https://hikaruxxxx.github.io/BokiTore/privacy.html"
         /// 利用規約
         static let termsOfService = "https://hikaruxxxx.github.io/BokiTore/terms.html"
+        /// Apple標準EULA
+        static let appleEULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
     }
 }
